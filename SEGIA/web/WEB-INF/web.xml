@@ -1,0 +1,3040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <session-config>
+        <session-timeout>
+            360
+        </session-timeout>
+    </session-config>
+    
+    <!-- WELLCOME -->
+    
+    <welcome-file-list>
+        <welcome-file>startup.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- /wellcome -->
+    
+    <!-- ERROR -->
+    
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error-500.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error-400.jsp</location>
+    </error-page>
+    
+    <!-- /error -->
+    
+    <!-- STARTUP PAGES -->
+    
+    <servlet>
+        <servlet-name>startup</servlet-name>
+        <jsp-file>/startup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>startup</servlet-name>
+        <url-pattern>/startup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>wellcome</servlet-name>
+        <jsp-file>/wellcome.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wellcome</servlet-name>
+        <url-pattern>/wellcome</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /startup pages -->
+    
+    <!-- DASHBOARD -->
+    
+    <servlet>
+        <servlet-name>dashboard</servlet-name>
+        <jsp-file>/dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dashboard</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>main-dashboard</servlet-name>
+        <jsp-file>/main-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>main-dashboard</servlet-name>
+        <url-pattern>/main-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>school-dashboard</servlet-name>
+        <jsp-file>/school-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>school-dashboard</servlet-name>
+        <url-pattern>/school-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>funds-dashboard</servlet-name>
+        <jsp-file>/funds-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-dashboard</servlet-name>
+        <url-pattern>/funds-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>stock-dashboard</servlet-name>
+        <jsp-file>/stock-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>stock-dashboard</servlet-name>
+        <url-pattern>/stock-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>finance-dashboard</servlet-name>
+        <jsp-file>/finance-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>finance-dashboard</servlet-name>
+        <url-pattern>/finance-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>archive-dashboard</servlet-name>
+        <jsp-file>/archive-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>archive-dashboard</servlet-name>
+        <url-pattern>/archive-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>commercial-dashboard</servlet-name>
+        <jsp-file>/commercial-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>commercial-dashboard</servlet-name>
+        <url-pattern>/commercial-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>collection-dashboard</servlet-name>
+        <jsp-file>/collection-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>collection-dashboard</servlet-name>
+        <url-pattern>/collection-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-dashboard</servlet-name>
+        <jsp-file>/user-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-dashboard</servlet-name>
+        <url-pattern>/user-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>teacher-dashboard</servlet-name>
+        <jsp-file>/teacher-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacher-dashboard</servlet-name>
+        <url-pattern>/teacher-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>teacher-grades</servlet-name>
+        <jsp-file>/teacher-grades.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacher-grades</servlet-name>
+        <url-pattern>/teacher-grades</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>rate-dashboard</servlet-name>
+        <jsp-file>/rate-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rate-dashboard</servlet-name>
+        <url-pattern>/rate-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!-- /dashboard -->
+    
+    <!-- ERROR PAGES -->
+    
+    <servlet>
+        <servlet-name>error-500</servlet-name>
+        <jsp-file>/error-500.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error-500</servlet-name>
+        <url-pattern>/error-500</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>error-404</servlet-name>
+        <jsp-file>/error-404.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error-404</servlet-name>
+        <url-pattern>/error-404</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>error-405</servlet-name>
+        <jsp-file>/error-405.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error-405</servlet-name>
+        <url-pattern>/error-405</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>error-406</servlet-name>
+        <jsp-file>/error-406.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error-406</servlet-name>
+        <url-pattern>/error-406</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>error-400</servlet-name>
+        <jsp-file>/error-400.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error-400</servlet-name>
+        <url-pattern>/error-400</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>error-manitence</servlet-name>
+        <jsp-file>/error-manitence.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error-manitence</servlet-name>
+        <url-pattern>/error-manitence</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /error pages -->
+    
+    
+    <!-- CONTROL -->
+    
+    <servlet>
+        <servlet-name>trial</servlet-name>
+        <jsp-file>/trial.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>trial</servlet-name>
+        <url-pattern>/trial</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>activaction-success</servlet-name>
+        <jsp-file>/activaction-success.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>activaction-success</servlet-name>
+        <url-pattern>/activaction-success</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>activaction-fail</servlet-name>
+        <jsp-file>/activaction-fail.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>activaction-fail</servlet-name>
+        <url-pattern>/activaction-fail</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /control -->
+    
+    <!-- USUÁRIOS E CONTROLE DE ACESSO -->
+    
+    <servlet>
+        <servlet-name>user-login</servlet-name>
+        <jsp-file>/user-login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-login</servlet-name>
+        <url-pattern>/user-login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>user-confirm</servlet-name>
+        <jsp-file>/user-confirm.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-confirm</servlet-name>
+        <url-pattern>/user-confirm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-password-recover</servlet-name>
+        <jsp-file>/user-password-recover.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-password-recover</servlet-name>
+        <url-pattern>/user-password-recover</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-question</servlet-name>
+        <jsp-file>/user-question.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-question</servlet-name>
+        <url-pattern>/user-question</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-blocked</servlet-name>
+        <jsp-file>/user-blocked.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-blocked</servlet-name>
+        <url-pattern>/user-blocked</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-login-alert</servlet-name>
+        <jsp-file>/user-login-alert.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-login-alert</servlet-name>
+        <url-pattern>/user-login-alert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-lockscreen</servlet-name>
+        <jsp-file>/user-lockscreen.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-lockscreen</servlet-name>
+        <url-pattern>/user-lockscreen</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>user-first-login</servlet-name>
+        <jsp-file>/user-first-login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-first-login</servlet-name>
+        <url-pattern>/user-first-login</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>user-profile</servlet-name>
+        <jsp-file>/user-profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-profile</servlet-name>
+        <url-pattern>/user-profile</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>user-logs</servlet-name>
+        <jsp-file>/user-logs.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-logs</servlet-name>
+        <url-pattern>/user-logs</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>user-permissions</servlet-name>
+        <jsp-file>/user-permissions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-permissions</servlet-name>
+        <url-pattern>/user-permissions</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>user-add</servlet-name>
+        <jsp-file>/user-add.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-add</servlet-name>
+        <url-pattern>/user-add</url-pattern>
+    </servlet-mapping>
+
+  
+    <servlet>
+        <servlet-name>user-password-answer</servlet-name>
+        <jsp-file>/user-password-answer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-password-answer</servlet-name>
+        <url-pattern>/user-password-answer</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>user-status</servlet-name>
+        <jsp-file>/user-status.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user-status</servlet-name>
+        <url-pattern>/user-status</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>admin-instution-select</servlet-name>
+        <jsp-file>/admin-instution-select.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin-instution-select</servlet-name>
+        <url-pattern>/admin-instution-select</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /usuários e controle de acesso -->
+    
+    
+    <!-- Gestao --> 
+  
+    <servlet>
+        <servlet-name>student</servlet-name>
+        <jsp-file>/student.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>students</servlet-name>
+        <jsp-file>/students.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>students</servlet-name>
+        <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>student-dashboard</servlet-name>
+        <jsp-file>/student-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-dashboard</servlet-name>
+        <url-pattern>/student-dashboard</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>student-file</servlet-name>
+        <jsp-file>/student-file.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-file</servlet-name>
+        <url-pattern>/student-file</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>student-register</servlet-name>
+        <jsp-file>/student-register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-register</servlet-name>
+        <url-pattern>/student-register</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>student-import</servlet-name>
+        <jsp-file>/student-import.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-import</servlet-name>
+        <url-pattern>/student-import</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>student-dist</servlet-name>
+        <jsp-file>/student-dist.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-dist</servlet-name>
+        <url-pattern>/student-dist</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>teacher</servlet-name>
+        <jsp-file>/teacher.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacher</servlet-name>
+        <url-pattern>/teacher</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>grades</servlet-name>
+        <jsp-file>/grades.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>grades</servlet-name>
+        <url-pattern>/grades</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>grade-students</servlet-name>
+        <jsp-file>/grade-students.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>grade-students</servlet-name>
+        <url-pattern>/grade-students</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>grades-schedule</servlet-name>
+        <jsp-file>/grades-schedule.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>grades-schedule</servlet-name>
+        <url-pattern>/grades-schedule</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>inscription</servlet-name>
+        <jsp-file>/inscription.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inscription</servlet-name>
+        <url-pattern>/inscription</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>inscriptions-online</servlet-name>
+        <jsp-file>/inscriptions-online.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inscriptions-online</servlet-name>
+        <url-pattern>/inscriptions-online</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>inscriptions</servlet-name>
+        <jsp-file>/inscriptions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inscriptions</servlet-name>
+        <url-pattern>/inscriptions</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>institution</servlet-name>
+        <jsp-file>/institution.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>institution</servlet-name>
+        <url-pattern>/institution</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>partners</servlet-name>
+        <jsp-file>/partners.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>partners</servlet-name>
+        <url-pattern>/partners</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>area</servlet-name>
+        <jsp-file>/area.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>area</servlet-name>
+        <url-pattern>/area</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /gestao -->
+    
+    
+    <!-- Cursos --> 
+  
+    <servlet>
+        <servlet-name>courses</servlet-name>
+        <jsp-file>/courses.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>courses</servlet-name>
+        <url-pattern>/courses</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>course-area</servlet-name>
+        <jsp-file>/course-area.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>course-area</servlet-name>
+        <url-pattern>/course-area</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>course-module</servlet-name>
+        <jsp-file>/course-module.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>course-module</servlet-name>
+        <url-pattern>/course-module</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>course-institution</servlet-name>
+        <jsp-file>/course-institution.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>course-institution</servlet-name>
+        <url-pattern>/course-institution</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>class-room</servlet-name>
+        <jsp-file>/class-room.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>class-room</servlet-name>
+        <url-pattern>/class-room</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>academic-year</servlet-name>
+        <jsp-file>/academic-year.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>academic-year</servlet-name>
+        <url-pattern>/academic-year</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>thematic</servlet-name>
+        <jsp-file>/thematic.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>thematic</servlet-name>
+        <url-pattern>/thematic</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>thematics</servlet-name>
+        <jsp-file>/thematics.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>thematics</servlet-name>
+        <url-pattern>/thematics</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>students-needy</servlet-name>
+        <jsp-file>/students-needy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>students-needy</servlet-name>
+        <url-pattern>/students-needy</url-pattern>
+    </servlet-mapping>
+  
+    
+    <servlet>
+        <servlet-name>summary</servlet-name>
+        <jsp-file>/summary.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>summary</servlet-name>
+        <url-pattern>/summary</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>summaries</servlet-name>
+        <jsp-file>/summaries.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>summaries</servlet-name>
+        <url-pattern>/summaries</url-pattern>
+    </servlet-mapping>
+    <!-- /cursos -->
+    
+    
+    <!-- Calendário --> 
+  
+    <servlet>
+        <servlet-name>schedule-class</servlet-name>
+        <jsp-file>/schedule-class.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>schedule-class</servlet-name>
+        <url-pattern>/schedule-class</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>schedule-test</servlet-name>
+        <jsp-file>/schedule-test.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>schedule-test</servlet-name>
+        <url-pattern>/schedule-test</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>schedule-exam</servlet-name>
+        <jsp-file>/schedule-exam.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>schedule-exam</servlet-name>
+        <url-pattern>/schedule-exam</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>exam-jury</servlet-name>
+        <jsp-file>/exam-jury.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam-jury</servlet-name>
+        <url-pattern>/exam-jury</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>exam-notes</servlet-name>
+        <jsp-file>/exam-notes.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam-notes</servlet-name>
+        <url-pattern>/exam-notes</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>exam-distribution</servlet-name>
+        <jsp-file>/exam-distribution.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam-distribution</servlet-name>
+        <url-pattern>/exam-distribution</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>exam-attendance</servlet-name>
+        <jsp-file>/exam-attendance.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam-attendance</servlet-name>
+        <url-pattern>/exam-attendance</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>exam-list</servlet-name>
+        <jsp-file>/exam-list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam-list</servlet-name>
+        <url-pattern>/exam-list</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /calendário -->
+    
+    
+    <!-- Avaliação --> 
+  
+    <servlet>
+        <servlet-name>course-link</servlet-name>
+        <jsp-file>/course-link.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>course-link</servlet-name>
+        <url-pattern>/course-link</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-notes</servlet-name>
+        <jsp-file>/avl-notes.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-notes</servlet-name>
+        <url-pattern>/avl-notes</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-notes-import</servlet-name>
+        <jsp-file>/avl-notes-import.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-notes-import</servlet-name>
+        <url-pattern>/avl-notes-import</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-guidelines</servlet-name>
+        <jsp-file>/avl-guidelines.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-guidelines</servlet-name>
+        <url-pattern>/avl-guidelines</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-guidelines-freq</servlet-name>
+        <jsp-file>/avl-guidelines-freq.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-guidelines-freq</servlet-name>
+        <url-pattern>/avl-guidelines-freq</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-attendance</servlet-name>
+        <jsp-file>/avl-attendance.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-attendance</servlet-name>
+        <url-pattern>/avl-attendance</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-comments</servlet-name>
+        <jsp-file>/avl-comments.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-comments</servlet-name>
+        <url-pattern>/avl-comments</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-newsletters</servlet-name>
+        <jsp-file>/avl-newsletters.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-newsletters</servlet-name>
+        <url-pattern>/avl-newsletters</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-behavior</servlet-name>
+        <jsp-file>/avl-behavior.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-behavior</servlet-name>
+        <url-pattern>/avl-behavior</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>avl-answers</servlet-name>
+        <jsp-file>/avl-answers.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avl-answers</servlet-name>
+        <url-pattern>/avl-answers</url-pattern>
+    </servlet-mapping>
+    <!-- /avaliação -->
+    
+    
+    <!-- Estatísticas --> 
+  
+    <servlet>
+        <servlet-name>charts-general</servlet-name>
+        <jsp-file>/charts-general.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>charts-general</servlet-name>
+        <url-pattern>/charts-general</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>charts-course</servlet-name>
+        <jsp-file>/charts-course.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>charts-course</servlet-name>
+        <url-pattern>/charts-course</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-balance-report</servlet-name>
+        <jsp-file>/print-balance-report.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-balance-report</servlet-name>
+        <url-pattern>/print-balance-report</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-budget</servlet-name>
+        <jsp-file>/print-budget.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-budget</servlet-name>
+        <url-pattern>/print-budget</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-all-request</servlet-name>
+        <jsp-file>/print-all-request.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-all-request</servlet-name>
+        <url-pattern>/print-all-request</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-request-status</servlet-name>
+        <jsp-file>/print-request-status.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-request-status</servlet-name>
+        <url-pattern>/print-request-status</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-contracts</servlet-name>
+        <jsp-file>/print-contracts.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-contracts</servlet-name>
+        <url-pattern>/print-contracts</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-notifications</servlet-name>
+        <jsp-file>/print-notifications.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-notifications</servlet-name>
+        <url-pattern>/print-notifications</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /estatísticas -->
+    
+    
+    <!-- Despesas --> 
+  
+    <servlet>
+        <servlet-name>fees</servlet-name>
+        <jsp-file>/fees.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fees</servlet-name>
+        <url-pattern>/fees</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>fees-stock</servlet-name>
+        <jsp-file>/fees-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fees-stock</servlet-name>
+        <url-pattern>/fees-stock</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>fees-formation</servlet-name>
+        <jsp-file>/fees-formation.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fees-formation</servlet-name>
+        <url-pattern>/fees-formation</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>fees-category</servlet-name>
+        <jsp-file>/fees-category.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fees-category</servlet-name>
+        <url-pattern>/fees-category</url-pattern>
+    </servlet-mapping>
+    
+  
+    <servlet>
+        <servlet-name>fees-extract</servlet-name>
+        <jsp-file>/fees-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fees-extract</servlet-name>
+        <url-pattern>/fees-extract</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>fees-payment</servlet-name>
+        <jsp-file>/fees-payment.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fees-payment</servlet-name>
+        <url-pattern>/fees-payment</url-pattern>
+    </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>supplier</servlet-name>
+        <jsp-file>/supplier.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>supplier</servlet-name>
+        <url-pattern>/supplier</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /despesas -->
+    
+    
+    
+    <!-- Contabilidade --> 
+  
+    <servlet>
+        <servlet-name>payment-tax</servlet-name>
+        <jsp-file>/payment-tax.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-tax</servlet-name>
+        <url-pattern>/payment-tax</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-due</servlet-name>
+        <jsp-file>/payment-due.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-due</servlet-name>
+        <url-pattern>/payment-due</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-online</servlet-name>
+        <jsp-file>/payment-online.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-online</servlet-name>
+        <url-pattern>/payment-online</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-exchange</servlet-name>
+        <jsp-file>/payment-exchange.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-exchange</servlet-name>
+        <url-pattern>/payment-exchange</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-stats</servlet-name>
+        <jsp-file>/payment-stats.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-stats</servlet-name>
+        <url-pattern>/payment-stats</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-sec-way</servlet-name>
+        <jsp-file>/payment-sec-way.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-sec-way</servlet-name>
+        <url-pattern>/payment-sec-way</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-ref-status</servlet-name>
+        <jsp-file>/payment-ref-status.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-ref-status</servlet-name>
+        <url-pattern>/payment-ref-status</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-manual</servlet-name>
+        <jsp-file>/payment-manual.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-manual</servlet-name>
+        <url-pattern>/payment-manual</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /contabilidade -->
+    
+    
+    <!-- Resultados --> 
+  
+    <servlet>
+        <servlet-name>dre</servlet-name>
+        <jsp-file>/dre.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dre</servlet-name>
+        <url-pattern>/dre</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /resultados -->
+    
+    <!-- PRINT --> 
+  
+    <servlet>
+        <servlet-name>print-students-grade</servlet-name>
+        <jsp-file>/print-students-grade.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-students-grade</servlet-name>
+        <url-pattern>/print-students-grade</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-students-grade-2</servlet-name>
+        <jsp-file>/print-students-grade-2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-students-grade-2</servlet-name>
+        <url-pattern>/print-students-grade-2</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-students-grade-3</servlet-name>
+        <jsp-file>/print-students-grade-3.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-students-grade-3</servlet-name>
+        <url-pattern>/print-students-grade-3</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /print -->
+    
+    
+    <!-- Artigos --> 
+    <servlet>
+        <servlet-name>item</servlet-name>
+        <jsp-file>/item.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item</servlet-name>
+        <url-pattern>/item</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-tag</servlet-name>
+        <jsp-file>/item-tag.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-tag</servlet-name>
+        <url-pattern>/item-tag</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-search</servlet-name>
+        <jsp-file>/item-search.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-search</servlet-name>
+        <url-pattern>/item-search</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-inventory</servlet-name>
+        <jsp-file>/item-inventory.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-inventory</servlet-name>
+        <url-pattern>/item-inventory</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-stock</servlet-name>
+        <jsp-file>/item-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-stock</servlet-name>
+        <url-pattern>/item-stock</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-history</servlet-name>
+        <jsp-file>/item-history.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-history</servlet-name>
+        <url-pattern>/item-history</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-alert-stock</servlet-name>
+        <jsp-file>/item-alert-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-alert-stock</servlet-name>
+        <url-pattern>/item-alert-stock</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-out-of-stock</servlet-name>
+        <jsp-file>/item-out-of-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-out-of-stock</servlet-name>
+        <url-pattern>/item-out-of-stock</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /artigos -->
+    
+    
+    <!-- Activos --> 
+    <servlet>
+        <servlet-name>asset</servlet-name>
+        <jsp-file>/asset.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>asset</servlet-name>
+        <url-pattern>/asset</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /activos -->
+    
+    
+    <!-- Transacoes --> 
+    <servlet>
+        <servlet-name>transaction</servlet-name>
+        <jsp-file>/transaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transaction</servlet-name>
+        <url-pattern>/transaction</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /transacoes -->
+    
+    
+    <!-- Vendas --> 
+    
+    <servlet>
+        <servlet-name>customer</servlet-name>
+        <jsp-file>/customer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customer</servlet-name>
+        <url-pattern>/customer</url-pattern>
+    </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>sale</servlet-name>
+        <jsp-file>/sale.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sale</servlet-name>
+        <url-pattern>/sale</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sale-pos</servlet-name>
+        <jsp-file>/sale-pos.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sale-pos</servlet-name>
+        <url-pattern>/sale-pos</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>invoice</servlet-name>
+        <jsp-file>/invoice.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>invoice</servlet-name>
+        <url-pattern>/invoice</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>invoice-print</servlet-name>
+        <jsp-file>/invoice-print.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>invoice-print</servlet-name>
+        <url-pattern>/invoice-print</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>receipt-print</servlet-name>
+        <jsp-file>/receipt-print.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>receipt-print</servlet-name>
+        <url-pattern>/receipt-print</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>cash-flow</servlet-name>
+        <jsp-file>/cash-flow.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cash-flow</servlet-name>
+        <url-pattern>/cash-flow</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>invoice-approve</servlet-name>
+        <jsp-file>/invoice-approve.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>invoice-approve</servlet-name>
+        <url-pattern>/invoice-approve</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>receipt</servlet-name>
+        <jsp-file>/receipt.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>receipt</servlet-name>
+        <url-pattern>/receipt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>service</servlet-name>
+        <jsp-file>/service.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>service</servlet-name>
+        <url-pattern>/service</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /vendas -->
+    
+    <!-- Relatórios Gerais --> 
+    <servlet>
+        <servlet-name>print-balance-sheets</servlet-name>
+        <jsp-file>/print-balance-sheets.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-balance-sheets</servlet-name>
+        <url-pattern>/print-balance-sheets</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-balance-sheets-periodic</servlet-name>
+        <jsp-file>/print-balance-sheets-periodic.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-balance-sheets-periodic</servlet-name>
+        <url-pattern>/print-balance-sheets-periodic</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>balance-sheets</servlet-name>
+        <jsp-file>/balance-sheets.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>balance-sheets</servlet-name>
+        <url-pattern>/balance-sheets</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>balance-sheets-periodic</servlet-name>
+        <jsp-file>/balance-sheets-periodic.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>balance-sheets-periodic</servlet-name>
+        <url-pattern>/balance-sheets-periodic</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-account</servlet-name>
+        <jsp-file>/extract-account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-account</servlet-name>
+        <url-pattern>/extract-account</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-extract-account</servlet-name>
+        <jsp-file>/print-extract-account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-extract-account</servlet-name>
+        <url-pattern>/print-extract-account</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-employee</servlet-name>
+        <jsp-file>/extract-employee.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-employee</servlet-name>
+        <url-pattern>/extract-employee</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-supplier</servlet-name>
+        <jsp-file>/extract-supplier.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-supplier</servlet-name>
+        <url-pattern>/extract-supplier</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-general</servlet-name>
+        <jsp-file>/extract-general.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-general</servlet-name>
+        <url-pattern>/extract-general</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!-- /relatórios gerais -->
+    
+    
+    <!-- Pety Cash --> 
+  
+    <servlet>
+        <servlet-name>budget-set</servlet-name>
+        <jsp-file>/budget-set.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>budget-set</servlet-name>
+        <url-pattern>/budget-set</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>budget-record</servlet-name>
+        <jsp-file>/budget-record.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>budget-record</servlet-name>
+        <url-pattern>/budget-record</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>budget-extract</servlet-name>
+        <jsp-file>/budget-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>budget-extract</servlet-name>
+        <url-pattern>/budget-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-budget-extract</servlet-name>
+        <jsp-file>/print-budget-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-budget-extract</servlet-name>
+        <url-pattern>/print-budget-extract</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /pety cash -->
+    
+    
+    <!-- Meios de Pagamento --> 
+  
+    <servlet>
+        <servlet-name>payment-methods</servlet-name>
+        <jsp-file>/payment-methods.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-methods</servlet-name>
+        <url-pattern>/payment-methods</url-pattern>
+    </servlet-mapping>
+    
+    
+     
+    <servlet>
+        <servlet-name>rh-dashboard</servlet-name>
+        <jsp-file>/rh-dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rh-dashboard</servlet-name>
+        <url-pattern>/rh-dashboard</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /meios de pagamento -->
+    
+    
+    <!-- Moedas --> 
+  
+    <servlet>
+        <servlet-name>coins</servlet-name>
+        <jsp-file>/coins.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>coins</servlet-name>
+        <url-pattern>/coins</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>exchange</servlet-name>
+        <jsp-file>/exchange.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exchange</servlet-name>
+        <url-pattern>/exchange</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /moedas -->
+    
+    
+    <!-- Bancos --> 
+  
+    <servlet>
+        <servlet-name>account</servlet-name>
+        <jsp-file>/account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>account</servlet-name>
+        <url-pattern>/account</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>account-entry</servlet-name>
+        <jsp-file>/account-entry.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>account-entry</servlet-name>
+        <url-pattern>/account-entry</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-inner-account</servlet-name>
+        <jsp-file>/extract-inner-account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-inner-account</servlet-name>
+        <url-pattern>/extract-inner-account</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-extract-inner-account</servlet-name>
+        <jsp-file>/print-extract-inner-account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-extract-inner-account</servlet-name>
+        <url-pattern>/print-extract-inner-account</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /bancos -->
+    
+    
+    
+    
+    
+    <!-- Requisições --> 
+  
+    <servlet>
+        <servlet-name>request-checks</servlet-name>
+        <jsp-file>/request-checks.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>request-checks</servlet-name>
+        <url-pattern>/request-checks</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>print-request-extract</servlet-name>
+        <jsp-file>/print-request-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-request-extract</servlet-name>
+        <url-pattern>/print-request-extract</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>request-extract</servlet-name>
+        <jsp-file>/request-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>request-extract</servlet-name>
+        <url-pattern>/request-extract</url-pattern>
+    </servlet-mapping>
+  
+  
+  
+    <servlet>
+        <servlet-name>request-details</servlet-name>
+        <jsp-file>/request-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>request-details</servlet-name>
+        <url-pattern>/request-details</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /requisicoes -->
+    
+    
+    <!-- Plano de conta --> 
+    <servlet>
+        <servlet-name>plan</servlet-name>
+        <jsp-file>/plan.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>plan</servlet-name>
+        <url-pattern>/plan</url-pattern>
+    </servlet-mapping>
+    
+    <!-- /plano de conta -->
+    
+    
+    <!-- Lanacamentos --> 
+    <servlet>
+        <servlet-name>entry-state</servlet-name>
+        <jsp-file>/entry-state.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>entry-state</servlet-name>
+        <url-pattern>/entry-state</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>entry-general</servlet-name>
+        <jsp-file>/entry-general.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>entry-general</servlet-name>
+        <url-pattern>/entry-general</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>entry-extract</servlet-name>
+        <jsp-file>/entry-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>entry-extract</servlet-name>
+        <url-pattern>/entry-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>entry-extract-details</servlet-name>
+        <jsp-file>/entry-extract-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>entry-extract-details</servlet-name>
+        <url-pattern>/entry-extract-details</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>print-entry-extract</servlet-name>
+        <jsp-file>/print-entry-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-entry-extract</servlet-name>
+        <url-pattern>/print-entry-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-entry-extract-details</servlet-name>
+        <jsp-file>/print-entry-extract-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-entry-extract-details</servlet-name>
+        <url-pattern>/print-entry-extract-details</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-fees</servlet-name>
+        <jsp-file>/print-fees.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-fees</servlet-name>
+        <url-pattern>/print-fees</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>item-in-stock</servlet-name>
+        <jsp-file>/item-in-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-in-stock</servlet-name>
+        <url-pattern>/item-in-stock</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>closure</servlet-name>
+        <jsp-file>/closure.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>closure</servlet-name>
+        <url-pattern>/closure</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>receipt-2</servlet-name>
+        <jsp-file>/receipt-2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>receipt-2</servlet-name>
+        <url-pattern>/receipt-2</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /lancamentos -->
+    
+    
+    <!-- Empresa --> 
+  
+    <servlet>
+        <servlet-name>company</servlet-name>
+        <jsp-file>/company.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>company</servlet-name>
+        <url-pattern>/company</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>company-part1</servlet-name>
+        <jsp-file>/company-part1.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>company-part1</servlet-name>
+        <url-pattern>/company-part1</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>company-part2</servlet-name>
+        <jsp-file>/company-part2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>company-part2</servlet-name>
+        <url-pattern>/company-part2</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>company-descriptive-memory</servlet-name>
+        <jsp-file>/company-descriptive-memory.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>company-descriptive-memory</servlet-name>
+        <url-pattern>/company-descriptive-memory</url-pattern>
+    </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>bank</servlet-name>
+        <jsp-file>/bank.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bank</servlet-name>
+        <url-pattern>/bank</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>capital</servlet-name>
+        <jsp-file>/capital.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>capital</servlet-name>
+        <url-pattern>/capital</url-pattern>
+    </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>exemption</servlet-name>
+        <jsp-file>/exemption.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exemption</servlet-name>
+        <url-pattern>/exemption</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>payment-condition</servlet-name>
+        <jsp-file>/payment-condition.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-condition</servlet-name>
+        <url-pattern>/payment-condition</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>department</servlet-name>
+        <jsp-file>/department.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>department</servlet-name>
+        <url-pattern>/department</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>point-of-sale</servlet-name>
+        <jsp-file>/point-of-sale.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>point-of-sale</servlet-name>
+        <url-pattern>/point-of-sale</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>nationality</servlet-name>
+        <jsp-file>/nationality.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>nationality</servlet-name>
+        <url-pattern>/nationality</url-pattern>
+    </servlet-mapping>
+  
+    
+    <!-- /empreas -->
+    
+    
+    <!-- Estatisticas --> 
+  
+    <servlet>
+        <servlet-name>extract-customer</servlet-name>
+        <jsp-file>/extract-customer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-customer</servlet-name>
+        <url-pattern>/extract-customer</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>seniority-analysis</servlet-name>
+        <jsp-file>/seniority-analysis.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>seniority-analysis</servlet-name>
+        <url-pattern>/seniority-analysis</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-stock</servlet-name>
+        <jsp-file>/extract-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-stock</servlet-name>
+        <url-pattern>/extract-stock</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-item</servlet-name>
+        <jsp-file>/extract-item.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-item</servlet-name>
+        <url-pattern>/extract-item</url-pattern>
+    </servlet-mapping>
+    
+  
+    <servlet>
+        <servlet-name>extract-transaction</servlet-name>
+        <jsp-file>/extract-transaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-transaction</servlet-name>
+        <url-pattern>/extract-transaction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>tax-resume</servlet-name>
+        <jsp-file>/tax-resume.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tax-resume</servlet-name>
+        <url-pattern>/tax-resume</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-top-saled</servlet-name>
+        <jsp-file>/item-top-saled.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-top-saled</servlet-name>
+        <url-pattern>/item-top-saled</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>item-analysis</servlet-name>
+        <jsp-file>/item-analysis.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>item-analysis</servlet-name>
+        <url-pattern>/item-analysis</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>kardex</servlet-name>
+        <jsp-file>/kardex.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>kardex</servlet-name>
+        <url-pattern>/kardex</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>extract-closure</servlet-name>
+        <jsp-file>/extract-closure.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-closure</servlet-name>
+        <url-pattern>/extract-closure</url-pattern>
+    </servlet-mapping>
+  
+    
+    <!-- /estatisticas -->
+    
+    
+    <!-- Guias de Remessa --> 
+  
+    <servlet>
+        <servlet-name>guide</servlet-name>
+        <jsp-file>/guide.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>guide</servlet-name>
+        <url-pattern>/guide</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>guide-print</servlet-name>
+        <jsp-file>/guide-print.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>guide-print</servlet-name>
+        <url-pattern>/guide-print</url-pattern>
+    </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>guide-list</servlet-name>
+        <jsp-file>/guide-list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>guide-list</servlet-name>
+        <url-pattern>/guide-list</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /guias de remessa -->
+    
+    
+    <!-- Pre-visualização --> 
+  
+    <servlet>
+        <servlet-name>preview-guide</servlet-name>
+        <jsp-file>/preview-guide.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>preview-guide</servlet-name>
+        <url-pattern>/preview-guide</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>preview-invoice</servlet-name>
+        <jsp-file>/preview-invoice.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>preview-invoice</servlet-name>
+        <url-pattern>/preview-invoice</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>preview-receipt</servlet-name>
+        <jsp-file>/preview-receipt.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>preview-receipt</servlet-name>
+        <url-pattern>/preview-receipt</url-pattern>
+    </servlet-mapping>
+  
+    <!-- /pre-visualização -->
+    
+    
+    <!-- Impressões -->
+    <servlet>
+        <servlet-name>print-out-of-stock</servlet-name>
+        <jsp-file>/print-out-of-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-out-of-stock</servlet-name>
+        <url-pattern>/print-out-of-stock</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-alert-stock</servlet-name>
+        <jsp-file>/print-alert-stock.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-alert-stock</servlet-name>
+        <url-pattern>/print-alert-stock</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-item</servlet-name>
+        <jsp-file>/print-item.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-item</servlet-name>
+        <url-pattern>/print-item</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-customer</servlet-name>
+        <jsp-file>/print-customer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-customer</servlet-name>
+        <url-pattern>/print-customer</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-asset</servlet-name>
+        <jsp-file>/print-asset.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-asset</servlet-name>
+        <url-pattern>/print-asset</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-customer-extract</servlet-name>
+        <jsp-file>/print-customer-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-customer-extract</servlet-name>
+        <url-pattern>/print-customer-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-seniority-analysis</servlet-name>
+        <jsp-file>/print-seniority-analysis.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-seniority-analysis</servlet-name>
+        <url-pattern>/print-seniority-analysis</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-stock-extract</servlet-name>
+        <jsp-file>/print-stock-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-stock-extract</servlet-name>
+        <url-pattern>/print-stock-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-stock-history</servlet-name>
+        <jsp-file>/print-stock-history.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-stock-history</servlet-name>
+        <url-pattern>/print-stock-history</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-item-extract</servlet-name>
+        <jsp-file>/print-item-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-item-extract</servlet-name>
+        <url-pattern>/print-item-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-company</servlet-name>
+        <jsp-file>/print-company.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-company</servlet-name>
+        <url-pattern>/print-company</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>print-supplier</servlet-name>
+        <jsp-file>/print-supplier.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-supplier</servlet-name>
+        <url-pattern>/print-supplier</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-guide</servlet-name>
+        <jsp-file>/print-guide.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-guide</servlet-name>
+        <url-pattern>/print-guide</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-invoice</servlet-name>
+        <jsp-file>/print-invoice.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-invoice</servlet-name>
+        <url-pattern>/print-invoice</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-receipt</servlet-name>
+        <jsp-file>/print-receipt.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-receipt</servlet-name>
+        <url-pattern>/print-receipt</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-receipt-2</servlet-name>
+        <jsp-file>/print-receipt-2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-receipt-2</servlet-name>
+        <url-pattern>/print-receipt-2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-receipt-3</servlet-name>
+        <jsp-file>/print-receipt-3.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-receipt-3</servlet-name>
+        <url-pattern>/print-receipt-3</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-document</servlet-name>
+        <jsp-file>/print-document.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-document</servlet-name>
+        <url-pattern>/print-document</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-transaction</servlet-name>
+        <jsp-file>/print-transaction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-transaction</servlet-name>
+        <url-pattern>/print-transaction</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-transaction-extract</servlet-name>
+        <jsp-file>/print-transaction-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-transaction-extract</servlet-name>
+        <url-pattern>/print-transaction-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-kardex</servlet-name>
+        <jsp-file>/print-kardex.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-kardex</servlet-name>
+        <url-pattern>/print-kardex</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-item-analysis</servlet-name>
+        <jsp-file>/print-item-analysis.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-item-analysis</servlet-name>
+        <url-pattern>/print-item-analysis</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-tax-resume</servlet-name>
+        <jsp-file>/print-tax-resume.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-tax-resume</servlet-name>
+        <url-pattern>/print-tax-resume</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-item-top-saled</servlet-name>
+        <jsp-file>/print-item-top-saled.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-item-top-saled</servlet-name>
+        <url-pattern>/print-item-top-saled</url-pattern>
+    </servlet-mapping>
+    <!-- /impressões -->
+    
+   
+    <!-- Contracto -->
+  
+    <servlet>
+        <servlet-name>contract</servlet-name>
+        <jsp-file>/contract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contract</servlet-name>
+        <url-pattern>/contract</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>contract-execution</servlet-name>
+        <jsp-file>/contract-execution.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contract-execution</servlet-name>
+        <url-pattern>/contract-execution</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>contract-monitoring</servlet-name>
+        <jsp-file>/contract-monitoring.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contract-monitoring</servlet-name>
+        <url-pattern>/contract-monitoring</url-pattern>
+    </servlet-mapping>
+  
+  
+  
+    <servlet>
+        <servlet-name>funds-budget</servlet-name>
+        <jsp-file>/funds-budget.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-budget</servlet-name>
+        <url-pattern>/funds-budget</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>addendum-approve</servlet-name>
+        <jsp-file>/addendum-approve.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addendum-approve</servlet-name>
+        <url-pattern>/addendum-approve</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>addendum-list</servlet-name>
+        <jsp-file>/addendum-list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addendum-list</servlet-name>
+        <url-pattern>/addendum-list</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>addendum-request</servlet-name>
+        <jsp-file>/addendum-request.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addendum-request</servlet-name>
+        <url-pattern>/addendum-request</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addendum-details</servlet-name>
+        <jsp-file>/addendum-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addendum-details</servlet-name>
+        <url-pattern>/addendum-details</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>funds-edit</servlet-name>
+        <jsp-file>/funds-edit.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-edit</servlet-name>
+        <url-pattern>/funds-edit</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>funds-approve</servlet-name>
+        <jsp-file>/funds-approve.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-approve</servlet-name>
+        <url-pattern>/funds-approve</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>funds-report</servlet-name>
+        <jsp-file>/funds-report.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-report</servlet-name>
+        <url-pattern>/funds-report</url-pattern>
+    </servlet-mapping>
+     
+    <servlet>
+        <servlet-name>funds-details</servlet-name>
+        <jsp-file>/funds-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-details</servlet-name>
+        <url-pattern>/funds-details</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>funds-request</servlet-name>
+        <jsp-file>/funds-request.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-request</servlet-name>
+        <url-pattern>/funds-request</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>other-funds-request</servlet-name>
+        <jsp-file>/other-funds-request.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>other-funds-request</servlet-name>
+        <url-pattern>/other-funds-request</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>funds-quitter</servlet-name>
+        <jsp-file>/funds-quitter.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-quitter</servlet-name>
+        <url-pattern>/funds-quitter</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>funds-status</servlet-name>
+        <jsp-file>/funds-status.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-status</servlet-name>
+        <url-pattern>/funds-status</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>funds-balance</servlet-name>
+        <jsp-file>/funds-balance.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-balance</servlet-name>
+        <url-pattern>/funds-balance</url-pattern>
+    </servlet-mapping>
+     
+    
+    <servlet>
+        <servlet-name>funds-pending</servlet-name>
+        <jsp-file>/funds-pending.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>funds-pending</servlet-name>
+        <url-pattern>/funds-pending</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>notification</servlet-name>
+        <jsp-file>/notification.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>notification</servlet-name>
+        <url-pattern>/notification</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>notifications</servlet-name>
+        <jsp-file>/notifications.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>notifications</servlet-name>
+        <url-pattern>/notifications</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>budget</servlet-name>
+        <jsp-file>/budget.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>budget</servlet-name>
+        <url-pattern>/budget</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>payment-method</servlet-name>
+        <jsp-file>/payment-method.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payment-method</servlet-name>
+        <url-pattern>/payment-method</url-pattern>
+    </servlet-mapping>
+    <!-- /contracto -->
+   
+
+    
+    
+    <!-- /clientes -->
+    
+    
+    
+    <!-- Documentos --> 
+    <servlet>
+        <servlet-name>document-type</servlet-name>
+        <jsp-file>/document-type.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>document-type</servlet-name>
+        <url-pattern>/document-type</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>document</servlet-name>
+        <jsp-file>/document.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>document</servlet-name>
+        <url-pattern>/document</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>documents</servlet-name>
+        <jsp-file>/documents.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>documents</servlet-name>
+        <url-pattern>/documents</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>document-upload</servlet-name>
+        <jsp-file>/document-upload.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>document-upload</servlet-name>
+        <url-pattern>/document-upload</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>document-details</servlet-name>
+        <jsp-file>/document-details.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>document-details</servlet-name>
+        <url-pattern>/document-details</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>document-details-2</servlet-name>
+        <jsp-file>/document-details-2.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>document-details-2</servlet-name>
+        <url-pattern>/document-details-2</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>extract-document</servlet-name>
+        <jsp-file>/extract-document.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-document</servlet-name>
+        <url-pattern>/extract-document</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-document-extract</servlet-name>
+        <jsp-file>/print-document-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-document-extract</servlet-name>
+        <url-pattern>/print-document-extract</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>print-documents</servlet-name>
+        <jsp-file>/print-documents.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-documents</servlet-name>
+        <url-pattern>/print-documents</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /documentos -->
+    
+    <!-- listagens -->
+    
+    <servlet>
+        <servlet-name>print-extract-student</servlet-name>
+        <jsp-file>/print-extract-student.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-extract-student</servlet-name>
+        <url-pattern>/print-extract-student</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-payment</servlet-name>
+        <jsp-file>/print-payment.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-payment</servlet-name>
+        <url-pattern>/print-payment</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-grade</servlet-name>
+        <jsp-file>/print-grade.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-grade</servlet-name>
+        <url-pattern>/print-grade</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-student</servlet-name>
+        <jsp-file>/print-student.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-student</servlet-name>
+        <url-pattern>/print-student</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-student-file</servlet-name>
+        <jsp-file>/print-student-file.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-student-file</servlet-name>
+        <url-pattern>/print-student-file</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-teacher</servlet-name>
+        <jsp-file>/print-teacher.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-teacher</servlet-name>
+        <url-pattern>/print-teacher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-course</servlet-name>
+        <jsp-file>/print-course.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-course</servlet-name>
+        <url-pattern>/print-course</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-course-resume</servlet-name>
+        <jsp-file>/print-course-resume.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-course-resume</servlet-name>
+        <url-pattern>/print-course-resume</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-inscriptions</servlet-name>
+        <jsp-file>/print-inscriptions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-inscriptions</servlet-name>
+        <url-pattern>/print-inscriptions</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>print-subjects</servlet-name>
+        <jsp-file>/print-subjects.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-subjects</servlet-name>
+        <url-pattern>/print-subjects</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-subjects-course</servlet-name>
+        <jsp-file>/print-subjects-course.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-subjects-course</servlet-name>
+        <url-pattern>/print-subjects-course</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-teachers-grade</servlet-name>
+        <jsp-file>/print-teachers-grade.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-teachers-grade</servlet-name>
+        <url-pattern>/print-teachers-grade</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-subjects-teacher</servlet-name>
+        <jsp-file>/print-subjects-teacher.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-subjects-teacher</servlet-name>
+        <url-pattern>/print-subjects-teacher</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>print-nationality</servlet-name>
+        <jsp-file>/print-nationality.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-nationality</servlet-name>
+        <url-pattern>/print-nationality</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-schedule-class</servlet-name>
+        <jsp-file>/print-schedule-class.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-schedule-class</servlet-name>
+        <url-pattern>/print-schedule-class</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>statistics</servlet-name>
+        <jsp-file>/statistics.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>statistics</servlet-name>
+        <url-pattern>/statistics</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-schedule-test</servlet-name>
+        <jsp-file>/print-schedule-test.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-schedule-test</servlet-name>
+        <url-pattern>/print-schedule-test</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-avl-guidelines</servlet-name>
+        <jsp-file>/print-avl-guidelines.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-avl-guidelines</servlet-name>
+        <url-pattern>/print-avl-guidelines</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-avl-notes</servlet-name>
+        <jsp-file>/print-avl-notes.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-avl-notes</servlet-name>
+        <url-pattern>/print-avl-notes</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>print-avl-attendance</servlet-name>
+        <jsp-file>/print-avl-attendance.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-avl-attendance</servlet-name>
+        <url-pattern>/print-avl-attendance</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!-- /listagens -->
+    
+    <!-- Disciplinas -->
+    <servlet>
+        <servlet-name>subjects-of-course</servlet-name>
+        <jsp-file>/subjects-of-course.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subjects-of-course</servlet-name>
+        <url-pattern>/subjects-of-course</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>teacher-of-grade</servlet-name>
+        <jsp-file>/teacher-of-grade.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teacher-of-grade</servlet-name>
+        <url-pattern>/teacher-of-grade</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>teachers-of-grade</servlet-name>
+        <jsp-file>/teachers-of-grade.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>teachers-of-grade</servlet-name>
+        <url-pattern>/teachers-of-grade</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>subjects-of-teacher</servlet-name>
+        <jsp-file>/subjects-of-teacher.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subjects-of-teacher</servlet-name>
+        <url-pattern>/subjects-of-teacher</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>subjects</servlet-name>
+        <jsp-file>/subjects.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subjects</servlet-name>
+        <url-pattern>/subjects</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- /disciplinas -->
+    
+    <!-- Lancamentos -->
+    <servlet>
+        <servlet-name>table-discounts</servlet-name>
+        <jsp-file>/table-discounts.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>table-discounts</servlet-name>
+        <url-pattern>/table-discounts</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>payroll</servlet-name>
+        <jsp-file>/payroll.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payroll</servlet-name>
+        <url-pattern>/payroll</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>payrolls</servlet-name>
+        <jsp-file>/payrolls.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>payrolls</servlet-name>
+        <url-pattern>/payrolls</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>employee</servlet-name>
+        <jsp-file>/employee.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employee</servlet-name>
+        <url-pattern>/employee</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>hours</servlet-name>
+        <jsp-file>/hours.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hours</servlet-name>
+        <url-pattern>/hours</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>absences</servlet-name>
+        <jsp-file>/absences.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>absences</servlet-name>
+        <url-pattern>/absences</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>role</servlet-name>
+        <jsp-file>/role.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>role</servlet-name>
+        <url-pattern>/role</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>level</servlet-name>
+        <jsp-file>/level.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>level</servlet-name>
+        <url-pattern>/level</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>release</servlet-name>
+        <jsp-file>/release.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>release</servlet-name>
+        <url-pattern>/release</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>releases</servlet-name>
+        <jsp-file>/releases.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>releases</servlet-name>
+        <url-pattern>/releases</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>extract-release</servlet-name>
+        <jsp-file>/extract-release.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>extract-release</servlet-name>
+        <url-pattern>/extract-release</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>staff-frame</servlet-name>
+        <jsp-file>/staff-frame.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>staff-frame</servlet-name>
+        <url-pattern>/staff-frame</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>report-payment-employee</servlet-name>
+        <jsp-file>/report-payment-employee.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report-payment-employee</servlet-name>
+        <url-pattern>/report-payment-employee</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>report-absence-employee</servlet-name>
+        <jsp-file>/report-absence-employee.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report-absence-employee</servlet-name>
+        <url-pattern>/report-absence-employee</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>report-hour-employee</servlet-name>
+        <jsp-file>/report-hour-employee.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report-hour-employee</servlet-name>
+        <url-pattern>/report-hour-employee</url-pattern>
+    </servlet-mapping>
+  
+    
+    <servlet>
+        <servlet-name>report-absence</servlet-name>
+        <jsp-file>/report-absence.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report-absence</servlet-name>
+        <url-pattern>/report-absence</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>report-hour</servlet-name>
+        <jsp-file>/report-hour.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report-hour</servlet-name>
+        <url-pattern>/report-hour</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>driver-order</servlet-name>
+        <jsp-file>/driver-order.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>driver-order</servlet-name>
+        <url-pattern>/driver-order</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>print-inventory-in</servlet-name>
+        <jsp-file>/print-inventory-in.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-inventory-in</servlet-name>
+        <url-pattern>/print-inventory-in</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-inventory-out</servlet-name>
+        <jsp-file>/print-inventory-out.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-inventory-out</servlet-name>
+        <url-pattern>/print-inventory-out</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-closure</servlet-name>
+        <jsp-file>/print-closure.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-closure</servlet-name>
+        <url-pattern>/print-closure</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-closure-extract</servlet-name>
+        <jsp-file>/print-closure-extract.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-closure-extract</servlet-name>
+        <url-pattern>/print-closure-extract</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-sale-resume</servlet-name>
+        <jsp-file>/print-sale-resume.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-sale-resume</servlet-name>
+        <url-pattern>/print-sale-resume</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-sale-user</servlet-name>
+        <jsp-file>/print-sale-user.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-sale-user</servlet-name>
+        <url-pattern>/print-sale-user</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>print-certificate</servlet-name>
+        <jsp-file>/print-certificate.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>print-certificate</servlet-name>
+        <url-pattern>/print-certificate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>transfer-to-class</servlet-name>
+        <jsp-file>/transfer-to-class.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transfer-to-class</servlet-name>
+        <url-pattern>/transfer-to-class</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>transfer-to-school</servlet-name>
+        <jsp-file>/transfer-to-school.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>transfer-to-school</servlet-name>
+        <url-pattern>/transfer-to-school</url-pattern>
+    </servlet-mapping>
+  
+    <!-- /lancamentos -->
+    
+    
+    
+    <!-- Conselho de Escola -->
+    <servlet>
+        <servlet-name>members</servlet-name>
+        <jsp-file>/members.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>members</servlet-name>
+        <url-pattern>/members</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>directors</servlet-name>
+        <jsp-file>/directors.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>directors</servlet-name>
+        <url-pattern>/directors</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>announcement</servlet-name>
+        <jsp-file>/announcement.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>announcement</servlet-name>
+        <url-pattern>/announcement</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>announcements</servlet-name>
+        <jsp-file>/announcements.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>announcements</servlet-name>
+        <url-pattern>/announcements</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>acta</servlet-name>
+        <jsp-file>/acta.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>acta</servlet-name>
+        <url-pattern>/acta</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>actas</servlet-name>
+        <jsp-file>/actas.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>actas</servlet-name>
+        <url-pattern>/actas</url-pattern>
+    </servlet-mapping>
+    <!-- /conselho de escola -->
+
+</web-app>

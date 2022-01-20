@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://appserver:8080/appserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/appserver_8080/appserver/IspcWSrv.wsdl"/>
+    <system systemId="http://appserver:8080/appserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/appserver_8080/appserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/appserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8080/appserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8080/appserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8080/appserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/appserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/appserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/appserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/appserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/snackbarserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/snackbarserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/snackbarserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/snackbarserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/uemserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/uemserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/uemserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/uemserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/financeiraserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/financeiraserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/financeiraserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/financeiraserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/financeiraserver/DocumentoWSrv?wsdl" uri="wsdl/localhost_8085/financeiraserver/DocumentoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/financeiraserver/DocumentoWSrv?xsd=1" uri="wsdl/localhost_8085/financeiraserver/DocumentoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/meptserver/DocumentoWSrv?wsdl" uri="wsdl/localhost_8085/meptserver/DocumentoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/meptserver/DocumentoWSrv?xsd=1" uri="wsdl/localhost_8085/meptserver/DocumentoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/segiaserver/DocumentoWSrv?wsdl" uri="wsdl/localhost_8085/segiaserver/DocumentoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/segiaserver/DocumentoWSrv?xsd=1" uri="wsdl/localhost_8085/segiaserver/DocumentoWSrv.xsd_1.xsd"/>
+</catalog>

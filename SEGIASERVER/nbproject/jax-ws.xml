@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="UtilitariosWSrv">
+      <implementation-class>mz.co.centralserver.webservice.UtilitariosWSrv</implementation-class>
+    </service>
+    <service name="RecursosHumanosWSrv">
+      <implementation-class>mz.co.centralserver.webservice.RecursosHumanosWSrv</implementation-class>
+    </service>
+    <service name="GestaoWSrv">
+      <implementation-class>mz.co.centralserver.webservice.GestaoWSrv</implementation-class>
+    </service>
+    <service name="ControleAcessoWSrv">
+      <implementation-class>mz.co.centralserver.webservice.ControleAcessoWSrv</implementation-class>
+    </service>
+    <service name="LembreteWSrv">
+      <implementation-class>mz.co.centralserver.webservice.LembreteWSrv</implementation-class>
+    </service>
+    <service name="VendasWSrv">
+      <implementation-class>mz.co.centralserver.webservice.VendasWSrv</implementation-class>
+    </service>
+    <service name="FinancasWSrv">
+      <implementation-class>mz.co.centralserver.webservice.FinancasWSrv</implementation-class>
+    </service>
+    <service name="IspcWSrv">
+      <implementation-class>mz.co.centralserver.webservice.IspcWSrv</implementation-class>
+    </service>
+    <service name="ContratoWSrv">
+      <implementation-class>mz.co.centralserver.webservice.ContratoWSrv</implementation-class>
+    </service>
+    <service name="EnsinoWSrv">
+      <implementation-class>mz.co.centralserver.webservice.EnsinoWSrv</implementation-class>
+    </service>
+    <service name="DocumentoWSrv">
+      <implementation-class>mz.co.centralserver.webservice.DocumentoWSrv</implementation-class>
+    </service>
+    <service name="ContabilidadeWSrv">
+      <implementation-class>mz.co.centralserver.webservice.ContabilidadeWSrv</implementation-class>
+    </service>
+  </services>
+  <clients/>
+  <jsr109>false</jsr109>
+</jax-ws>

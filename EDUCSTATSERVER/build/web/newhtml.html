@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DCI APP - Distribuição por Genero</title>
+
+        <!-- Page Description, Author and Keywords -->
+        <meta name="description" content="DC Inovaction - Software & Multimedia Solutions">
+        <meta name="author" content="Hamilton Jhonas">
+        <meta name="keywords" content="DC Inovaction, Software, Multimedia, Escola, School, Vendas, Stock, Market, Branding, Logo, Hotel, Hotelaria, RH, Recursos Humanos, Controle de Acesso, Web Design, Web Marketing, Development, Hosting" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="http://localhost:8081/suc/images/favicons/pigi/favicon.png">
+
+        <!-- Global stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+        <!-- /global stylesheets -->
+
+        <!-- Core JS files -->
+        <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+        <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+        <!-- /core JS files -->
+
+        <!-- Theme JS files -->
+        <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/fixed_columns.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/media/fancybox.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/datepicker.min.js"></script>
+        <script type="text/javascript" src="assets/js/core/libraries/jquery_ui/effects.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+
+
+        <script type="text/javascript" src="assets/js/core/app.js"></script>
+        <script type="text/javascript" src="assets/js/pages/form_layouts.js"></script>
+        <script type="text/javascript" src="assets/js/pages/datatables_extension_fixed_columns.js"></script>
+        <script type="text/javascript" src="assets/js/pages/gallery.js"></script>
+
+        <!-- /theme JS files -->
+
+        <!-- Velocity animation  menu -->
+        <script type="text/javascript" src="assets/js/plugins/velocity/velocity.min.js"></script>
+        <script type="text/javascript" src="assets/js/plugins/velocity/velocity.ui.min.js"></script>
+        <script>
+
+            $(function () {
+
+                // Animated dropdowns
+                // ------------------------------
+
+                //
+                // Velocity animations
+                //
+
+                // Open
+                $('.dropdown-velocity, .btn-group-velocity').on('show.bs.dropdown', function (e) {
+                    $(this).find('.dropdown-menu').velocity('transition.slideUpIn', {
+                        duration: 200
+                    })
+                });
+
+                // Close
+                $('.dropdown-velocity, .btn-group-velocity').on('hide.bs.dropdown', function (e) {
+                    $(this).find('.dropdown-menu').velocity('transition.slideLeftOut', {
+                        duration: 200,
+                        complete: function () {
+                            $(this).removeAttr('style');
+                        }
+                    })
+                });
+
+            });
+
+        </script>
+        <!-- velocity animation menu -->
+        <script type="text/javascript" src="assets/js/plugins/visualization/echarts/echarts.js"></script>
+
+    </head>
+
+    <body oncontextmenu="return false" class="sidebar-xs">
+
+        <!-- Main navbar -->
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <h6 class="text-bold text-uppercase text-semibold class text-uppercase" style="margin-left: 2em;"> PIGI -  Plataforma Integrada de Gestão de Informação <img src="assets/images/logo_light.png" alt=""></h6> 
+
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown language-switch">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/flags/pt.png" class="position-left" alt="">
+                            Português
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="english"><img src="assets/images/flags/gb.png" alt=""> English</a></li>
+                            <li><a class="ukrainian"><img src="assets/images/flags/ua.png" alt=""> Українська</a></li>
+                            <li><a class="russian"><img src="assets/images/flags/ru.png" alt=""> Русский</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="http://appserver:8081/suc/images/profile-pictures/fp.jpg" alt="">
+                            <span>Fipag</span>
+                            <i class="caret"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="dc-user-profile"><i class="icon-user-plus"></i> Meu Perfil</a></li>
+                            <li><a href="#"><span class="badge bg-teal-400 pull-right">58</span> <i class="icon-comment-discussion"></i> Chats</a></li>
+                            <li class="divider"></li>
+                            <li><a href="dc-user-module-select"><i class="icon-switch2"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /main navbar -->
+
+
+        <!-- Page header -->
+        <div class="page-header">
+            <div class="breadcrumb-line breadcrumb-line-wide">
+                <ul class="breadcrumb">
+
+                    <li><a href="index"><i class="icon-home2 position-left"></i> Home</a></li>
+                    <li><a href="#"><i class="icon-database position-left"></i> Base de Dados</a></li>
+                    <li><a href="#"><i class="icon-people position-left"></i>Recursos Humanos</a></li>
+                    <li class="active"><i class="icon-man-woman position-left"></i> Distribuição por Genero</li>
+                </ul>
+            </div>
+
+
+            <div class="page-header-content">
+                <div class="page-title">
+
+
+                    <div class="col-md-2">
+
+
+
+                        <div class="btn-group btn-group-velocity">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="icon-man-woman"></i> Distribuição por Genero <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="dc-rh-input-staff-evolution"><i class="icon-stats-growth2"></i> Evolução do Pessoal</a></li>
+                                <li  class="active"><a href="dc-rh-input-gender"><i class="icon-man-woman"></i> Distribuição por Genero</a></li>
+                                <li><a href="dc-rh-input-age"><i class="icon-height"></i> Distribuição por Idade</a></li>
+                                <li><a href="dc-rh-input-formation"><i class="icon-graduation"></i> Formação do Pessoal</a></li>
+                                <li><a href="dc-rh-input-academic"><i class="icon-book2"></i> Qualificação Académica</a></li>
+                                <li><a href="dc-rh-input-year"><i class="icon-briefcase"></i> Distribuição por Antiguidade</a></li>
+                                <li><a href="dc-rh-input-cost"><i class="icon-calculator"></i> Custo com pessoal</a></li>
+                                <li class="divider"></li> 
+                                <li><a href="dc-fipag-dashboard"><i class="icon-chevron-left"></i> Voltar ao painel principal</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <form  accept-charset="ISO-8859-1"  method = "post" action = "QW5hbGlzZURlc2VtcGVuaG9TZXJ2bGV0I0RDSQ==?YWNjYW8jYm0tYXJlYQ==">
+
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <select class="select" name="idArea">
+                                    <optgroup label="Selecione a area operacional">
+                                        <option value="23">AdEM Geral</option>
+                                 
+                                        <option value="<%=id%>" <%=sel%>><%=s%></option>
+                                    
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1">
+                            <select class="select">
+                                <optgroup label="Selecione ano">
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017"selected>2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <button type="submit" class="btn text-bold text-uppercase btn-labeled btn-labeled-left bg-blue-800 heading-btn">Filtrar <b><i class="icon-filter3"></i></b></button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <a href="QW5hbGlzZURlc2VtcGVuaG9TZXJ2bGV0I0RDSQ==?YWNjYW8jaW1wcmltaXItcmVsYXRvcmlvLWFvLWJt" target="_blank" class="btn btn-default text-uppercase text-bold ">Imprimir resultados <i class="icon-file-pdf  text-danger position-right"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <a href="QW5hbGlzZURlc2VtcGVuaG9TZXJ2bGV0I0RDSQ==?YWNjYW8jaW1wcmltaXItcmVsYXRvcmlvLWFvLWJt" target="_blank" class="btn btn-default text-uppercase text-bold ">Exportar resultados <i class="icon-file-excel  text-success position-right"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="heading-elements">
+                    <div class="heading-btn-group">
+                        <br>
+                        <button onClick="history.back();" class="btn text-bold text-uppercase btn-labeled btn-labeled-left bg-danger-400 heading-btn">Voltar ao painel principal<b><i class="icon-chevron-left"></i></b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /page header -->
+
+
+        <!-- Page container -->
+        <div class="page-container">
+
+            <!-- Page content -->
+            <div class="page-content">
+
+
+
+                <!-- Main content -->
+                <div class="content-wrapper">
+
+
+                    <div class="row">
+
+
+                        <div class="panel panel-flat">
+                            <div class="panel-heading">
+                                <h6 class="panel-title text-bold text-uppercase">Distribuição por Genero <span class="text-danger">(Inhambane)</span></h6>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                        <li><a data-action="close"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs nav-tabs-bottom">
+                                        <li class="active"><a href="#bottom-tab1" data-toggle="tab" class="text-uppercase text-bold">Direcção</a></li>
+                                        <li><a href="#bottom-tab2" data-toggle="tab" class="text-uppercase text-bold">Área Técnica</a></li>
+                                        <li><a href="#bottom-tab3" data-toggle="tab" class="text-uppercase text-bold">Área Comercial</a></li>
+                                        <li><a href="#bottom-tab4" data-toggle="tab" class="text-uppercase text-bold">Recursos Humanos</a></li>
+                                        <li><a href="#bottom-tab5" data-toggle="tab" class="text-uppercase text-bold">DAF</a></li>
+                                        <li><a href="#bottom-tab6" data-toggle="tab" class="text-uppercase text-bold">Trabalhadores</a></li>
+                                        <li><a href="#bottom-tab7" data-toggle="tab" class="text-uppercase text-bold">Todas Categorias</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="bottom-tab1">
+
+
+
+
+                                            <div class = "col-md-6">
+                                                <div class="panel panel-flat">
+
+                                                    <div class="panel-body">
+                                                        <!-- Daily sales -->
+
+                                                        <div class="table-responsive">
+                                                            <table class="table datatable-fixed-both" width="100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Nível Académico</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Jan</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Fev</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Mar</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Abr</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Mai</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Jun</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Jul</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Ago</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Set</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Out</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Nov</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Dez</th>
+                                                                        <th rowspan="1" scope="col" class="text-center text-bold text-uppercase">Total</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="#" class="letter-icon-title">01 - Homem</a> <br>
+                                                                            <span class="text-muted text-size-small"><i class="icon-location3 text-size-mini position-left"></i> Região Sul - Inhambane</span>
+                                                                        </td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">3</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="#" class="letter-icon-title">02 - Mulher</a> <br>
+                                                                            <span class="text-muted text-size-small"><i class="icon-location3 text-size-mini position-left"></i> Região Sul - Inhambane</span>
+                                                                        </td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-semibold text-center  no-margin">---</h6></td>
+
+                                                                    </tr>
+                                                                    <tr>
+
+                                                                        <td><h6 class="text-bold text-primary-800 no-margin">Sub-Total</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">6</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">---</h6></td>
+                                                                        <td><h6 class="text-bold text-center  no-margin">---</h6></td>
+
+
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!-- /daily sales -->
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+
+                                            <div class = "col-md-6">
+                                                <div class="panel panel-flat">
+                                                    <div class="panel-body">
+
+                                                        <div class="chart has-fixed-height" id="line_bar1"></div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <div class="tab-pane" id="bottom-tab2">
+                                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
+                                        </div>
+
+                                        <div class="tab-pane" id="bottom-tab3">
+                                            DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg whatever.
+                                        </div>
+
+                                        <div class="tab-pane" id="bottom-tab4">
+                                            Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- /main content -->
+
+            </div>
+            <!-- /page content -->
+
+
+            <!-- Footer -->
+            <div class="footer text-muted">
+                DC Inovaction Admin &copy; 2016. Todos os direitos reservados
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /page container -->
+
+        <script>
+            /* ------------------------------------------------------------------------------
+             *
+             *  # Echarts - pies and donuts
+             *
+             *  Pies and donuts chart configurations
+             *
+             *  Version: 1.0
+             *  Latest update: August 1, 2015
+             *
+             * ---------------------------------------------------------------------------- */
+
+            $(function () {
+
+                // Set paths
+                // ------------------------------
+
+                require.config({
+                    paths: {
+                        echarts: 'assets/js/plugins/visualization/echarts'
+                    }
+                });
+
+
+
+                // Configuration
+                // ------------------------------
+
+                require(
+                        // Add necessary charts
+                                [
+                                    'echarts',
+                                    'echarts/theme/limitless',
+                                    'echarts/chart/line',
+                                    'echarts/chart/bar',
+                                    'echarts/chart/pie',
+
+                                    'echarts/chart/scatter',
+                                    'echarts/chart/k',
+                                    'echarts/chart/radar',
+                                    'echarts/chart/gauge'
+                                ],
+                                // Charts setup
+                                        function (ec, limitless) {
+
+
+                                            // Initialize charts
+                                            // ------------------------------
+                                            var line_bar1 = ec.init(document.getElementById('line_bar1'), limitless);
+
+
+                                            // Charts setup
+                                            // ------------------------------                    
+
+                                            //
+                                            // Pie timeline options
+                                            //
+
+
+                                            line_bar_options1 = {
+
+                                                // Add tooltip
+                                                tooltip: {
+                                                    trigger: 'axis'
+                                                },
+
+                                                // Add legend
+                                                legend: {
+                                                    data: ['Periodo 2016', 'Periodo Homologo']
+                                                },
+
+                                                // Enable drag recalculate
+                                                calculable: true,
+
+                                                // Horizontal axis
+                                                xAxis: [{
+                                                        type: 'category',
+                                                        data: ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ']
+                                                    }],
+
+                                                // Vertical axis
+                                                yAxis: [{
+                                                        type: 'value'
+                                                    }],
+
+                                                // Add series
+                                                series: [
+                                                    {
+                                                        name: 'Periodo 2016',
+                                                        type: 'bar',
+                                                        data: [20, 49, 70, 32, 56, 76, 35, 62, 0, 0, 0, 0],
+                                                        itemStyle: {
+                                                            normal: {
+                                                                label: {
+                                                                    show: true,
+                                                                    textStyle: {
+                                                                        fontWeight: 500
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        name: 'Periodo Homologo',
+                                                        type: 'bar',
+                                                        data: [80, 32, 90, 64, 58, 70, 17, 18, 0, 0, 0, 0],
+                                                        itemStyle: {
+                                                            normal: {
+                                                                label: {
+                                                                    show: true,
+                                                                    textStyle: {
+                                                                        fontWeight: 500
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            };
+
+
+
+                                            // Apply options
+                                            // ------------------------------
+                                            line_bar1.setOption(line_bar_options1);
+
+
+
+                                            // Resize charts
+                                            // ------------------------------
+
+                                            window.onresize = function () {
+                                                setTimeout(function () {
+                                                    line_bar1.resize();
+                                                }, 200);
+                                            };
+                                        }
+                                );
+                            });
+
+        </script>
+        <script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
+    </body>
+</html>

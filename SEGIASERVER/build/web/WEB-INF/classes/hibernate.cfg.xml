@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/segiaserver?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">fSkc@r2010#DCI</property>
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">120</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">1000</property>
+        <property name="hibernate.c3p0.validate">true</property>
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+        <!-- Disable the second-level cache -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+        <!-- Mapping class -->
+        <!-- CONTABILISTICO -->
+        <mapping class="mz.co.centralserver.model.contabilistico.Activo"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Conta"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.ContaGeral"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Diario"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Documento"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.ExtractoContaGeral"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Lancamento"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Mensalidade"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.ModulosUsuarioMARKET"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Moeda"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Pagamento"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Pety"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.PetyCash"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.PlanoDeConta"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.TipoConta"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.EstadoFactura"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Extracto"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Factura"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.Recibo"/>
+        <mapping class="mz.co.centralserver.model.contabilistico.ReciboPagamento"/>
+        <!-- CONTRATO -->
+        <mapping class="mz.co.centralserver.model.contrato.Adenda"/>
+        <mapping class="mz.co.centralserver.model.contrato.Contrato"/>
+        <mapping class="mz.co.centralserver.model.contrato.RequisicaoFundo"/>
+        <!-- CONTROLE DE ACESSO -->
+        <mapping class="mz.co.centralserver.model.controleacesso.Browser"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.Log"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.Formulario"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.FormulariosUsuario"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.ModuloAcesso"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.ModuloUsuario"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.ModulosUsuario"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.NivelAcesso"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.TipoUsuario"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.Usuario"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.Sistema"/>
+        <mapping class="mz.co.centralserver.model.controleacesso.Trial"/>
+        <!-- DOCUMENTO -->
+        <mapping class="mz.co.centralserver.model.documento.Categoria"/>
+        <mapping class="mz.co.centralserver.model.documento.Ficheiro"/>
+        <!-- ENSINO -->
+        <mapping class="mz.co.centralserver.model.ensino.Agenda"/>
+        <mapping class="mz.co.centralserver.model.ensino.Aluno"/>
+        <mapping class="mz.co.centralserver.model.ensino.AnoLectivo"/>
+        <mapping class="mz.co.centralserver.model.ensino.Aproveitamento"/>
+        <mapping class="mz.co.centralserver.model.ensino.Area"/>
+        <mapping class="mz.co.centralserver.model.ensino.AreaFormacao"/>
+        <mapping class="mz.co.centralserver.model.ensino.Avaliacao"/>
+        <mapping class="mz.co.centralserver.model.ensino.Boletim"/>
+        <mapping class="mz.co.centralserver.model.ensino.Calendario"/>
+        <mapping class="mz.co.centralserver.model.ensino.CalendarioExame"/>
+        <mapping class="mz.co.centralserver.model.ensino.Curso"/>
+        <mapping class="mz.co.centralserver.model.ensino.Disciplina"/>
+        <mapping class="mz.co.centralserver.model.ensino.DisciplinaCurso"/>
+        <mapping class="mz.co.centralserver.model.ensino.DisciplinaDocente"/>
+        <mapping class="mz.co.centralserver.model.ensino.Docente"/>
+        <mapping class="mz.co.centralserver.model.ensino.DocenteTurma"/>
+        <mapping class="mz.co.centralserver.model.ensino.Escola"/>
+        <mapping class="mz.co.centralserver.model.ensino.Exame"/>
+        <mapping class="mz.co.centralserver.model.ensino.Falta"/>
+        <mapping class="mz.co.centralserver.model.ensino.Inscricao"/>
+        <mapping class="mz.co.centralserver.model.ensino.Matricula"/>
+        <mapping class="mz.co.centralserver.model.ensino.Media"/>
+        <mapping class="mz.co.centralserver.model.ensino.Modulo"/>
+        <mapping class="mz.co.centralserver.model.ensino.Notas"/>
+        <mapping class="mz.co.centralserver.model.ensino.Parceiro"/>
+        <mapping class="mz.co.centralserver.model.ensino.Presencas"/>
+        <mapping class="mz.co.centralserver.model.ensino.Resposta"/>
+        <mapping class="mz.co.centralserver.model.ensino.Sala"/>
+        <mapping class="mz.co.centralserver.model.ensino.SalaExame"/>
+        <mapping class="mz.co.centralserver.model.ensino.Sumario"/>
+        <mapping class="mz.co.centralserver.model.ensino.Taxa"/>
+        <mapping class="mz.co.centralserver.model.ensino.Tema"/>
+        <mapping class="mz.co.centralserver.model.ensino.Transferencia"/>
+        <mapping class="mz.co.centralserver.model.ensino.Turma"/>
+        <mapping class="mz.co.centralserver.model.ensino.Turno"/>
+        <mapping class="mz.co.centralserver.model.ensino.Vagas"/>
+        <!-- FINANCAS -->
+        <mapping class="mz.co.centralserver.model.financas.Banco"/>
+        <mapping class="mz.co.centralserver.model.financas.FolhaSalarial"/>
+        <mapping class="mz.co.centralserver.model.financas.ItemRequisicao"/>
+        <mapping class="mz.co.centralserver.model.financas.ItemRequisicaoCheque"/>
+        <mapping class="mz.co.centralserver.model.financas.Movimento"/>
+        <mapping class="mz.co.centralserver.model.financas.PeriodoSalarial"/>
+        <mapping class="mz.co.centralserver.model.financas.Preco"/>
+        <mapping class="mz.co.centralserver.model.financas.Requisicao"/>
+        <mapping class="mz.co.centralserver.model.financas.RequisicaoCheque"/>
+        <mapping class="mz.co.centralserver.model.financas.TipoMovimentoCheque"/>
+        <mapping class="mz.co.centralserver.model.financas.TipoPagamento"/>
+        <!-- GESTAO -->
+        <mapping class="mz.co.centralserver.model.gestao.AgendaContacto"/>
+        <mapping class="mz.co.centralserver.model.gestao.Cidade"/>
+        <mapping class="mz.co.centralserver.model.gestao.Cor"/>
+        <mapping class="mz.co.centralserver.model.gestao.DiaSemana"/>
+        <mapping class="mz.co.centralserver.model.gestao.Entidade"/>
+        <mapping class="mz.co.centralserver.model.gestao.Horario"/>
+        <mapping class="mz.co.centralserver.model.gestao.ListaTelefonica"/>
+        <mapping class="mz.co.centralserver.model.gestao.Nacionalidade"/>
+        <mapping class="mz.co.centralserver.model.gestao.NivelPrioridade"/>
+        <mapping class="mz.co.centralserver.model.gestao.Pdf"/>
+        <mapping class="mz.co.centralserver.model.gestao.Pessoa"/>
+        <mapping class="mz.co.centralserver.model.gestao.Segmento"/>
+        <mapping class="mz.co.centralserver.model.gestao.TipoContacto"/>
+        <mapping class="mz.co.centralserver.model.gestao.Upload"/>
+        <!-- IP -->
+        <mapping class="mz.co.centralserver.model.ip.Acta"/>
+        <mapping class="mz.co.centralserver.model.ip.Codigo"/>
+        <mapping class="mz.co.centralserver.model.ip.Convocatoria"/>
+        <mapping class="mz.co.centralserver.model.ip.Convocado"/>
+        <mapping class="mz.co.centralserver.model.ip.Doc"/>
+        <!-- ISPC -->
+        <mapping class="mz.co.centralserver.model.ispc.Despesa"/>
+        <mapping class="mz.co.centralserver.model.ispc.TipoDespesa"/>
+        <!-- LEMBRETE -->
+        <mapping class="mz.co.centralserver.model.notificacao.Lembrete"/>
+        <!--RECURSOS HUMANOS -->
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Administracao"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Assiduidade"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Cargo"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Contracto"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Departamento"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Dependente"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Faltas"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Ferias"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Firma"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Formacao"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Funcionario"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Habilitacao"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Horas"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.PlanoSaude"/>
+        <mapping class="mz.co.centralserver.model.recursoshumanos.Sector"/>
+        <!-- VENDAS -->
+        <mapping class="mz.co.centralserver.model.vendas.Caixa"/>
+        <mapping class="mz.co.centralserver.model.vendas.CategoriaProduto"/>
+        <mapping class="mz.co.centralserver.model.vendas.Cliente"/>
+        <mapping class="mz.co.centralserver.model.vendas.CondicaoPagamento"/>
+        <mapping class="mz.co.centralserver.model.vendas.ContaCorrente"/>
+        <mapping class="mz.co.centralserver.model.vendas.Fecho"/>
+        <mapping class="mz.co.centralserver.model.vendas.Fluxo"/>
+        <mapping class="mz.co.centralserver.model.vendas.Fornecedor"/>
+        <mapping class="mz.co.centralserver.model.vendas.GuiaRemessa"/>
+        <mapping class="mz.co.centralserver.model.vendas.Isencao"/>
+        <mapping class="mz.co.centralserver.model.vendas.ItemPedido"/>
+        <mapping class="mz.co.centralserver.model.vendas.MeioPagamento"/>
+        <mapping class="mz.co.centralserver.model.vendas.Produto"/>
+        <mapping class="mz.co.centralserver.model.vendas.ProdutoRequisicao"/>
+        <mapping class="mz.co.centralserver.model.vendas.ProdutoVendido"/>
+        <mapping class="mz.co.centralserver.model.vendas.Referencia"/>
+        <mapping class="mz.co.centralserver.model.vendas.RegistoFecho"/>
+        <mapping class="mz.co.centralserver.model.vendas.RequisicaoMaterial"/>
+        <mapping class="mz.co.centralserver.model.vendas.Servico"/>
+        <mapping class="mz.co.centralserver.model.vendas.ServicoVendido"/>
+        <mapping class="mz.co.centralserver.model.vendas.Tamanho"/>
+        <mapping class="mz.co.centralserver.model.vendas.TipoServico"/>
+        <mapping class="mz.co.centralserver.model.vendas.Venda"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,1411 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservice.centralserver.co.mz/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.centralserver.co.mz/">
+
+<xs:element name="buscaAgendaContactoId" type="tns:buscaAgendaContactoId" />
+
+<xs:element name="buscaAgendaContactoIdResponse" type="tns:buscaAgendaContactoIdResponse" />
+
+<xs:element name="buscaCidadeDescricao" type="tns:buscaCidadeDescricao" />
+
+<xs:element name="buscaCidadeDescricaoResponse" type="tns:buscaCidadeDescricaoResponse" />
+
+<xs:element name="buscaCidadeId" type="tns:buscaCidadeId" />
+
+<xs:element name="buscaCidadeIdResponse" type="tns:buscaCidadeIdResponse" />
+
+<xs:element name="buscaCorDescricao" type="tns:buscaCorDescricao" />
+
+<xs:element name="buscaCorDescricaoResponse" type="tns:buscaCorDescricaoResponse" />
+
+<xs:element name="buscaCorId" type="tns:buscaCorId" />
+
+<xs:element name="buscaCorIdResponse" type="tns:buscaCorIdResponse" />
+
+<xs:element name="buscaDiaSemanaDescricao" type="tns:buscaDiaSemanaDescricao" />
+
+<xs:element name="buscaDiaSemanaDescricaoResponse" type="tns:buscaDiaSemanaDescricaoResponse" />
+
+<xs:element name="buscaDiaSemanaId" type="tns:buscaDiaSemanaId" />
+
+<xs:element name="buscaDiaSemanaIdResponse" type="tns:buscaDiaSemanaIdResponse" />
+
+<xs:element name="buscaHorario" type="tns:buscaHorario" />
+
+<xs:element name="buscaHorarioId" type="tns:buscaHorarioId" />
+
+<xs:element name="buscaHorarioIdResponse" type="tns:buscaHorarioIdResponse" />
+
+<xs:element name="buscaHorarioResponse" type="tns:buscaHorarioResponse" />
+
+<xs:element name="buscaListaTelefonicaDescricao" type="tns:buscaListaTelefonicaDescricao" />
+
+<xs:element name="buscaListaTelefonicaDescricaoResponse" type="tns:buscaListaTelefonicaDescricaoResponse" />
+
+<xs:element name="buscaListaTelefonicaId" type="tns:buscaListaTelefonicaId" />
+
+<xs:element name="buscaListaTelefonicaIdResponse" type="tns:buscaListaTelefonicaIdResponse" />
+
+<xs:element name="buscaNivelPrioridadeDescricao" type="tns:buscaNivelPrioridadeDescricao" />
+
+<xs:element name="buscaNivelPrioridadeDescricaoResponse" type="tns:buscaNivelPrioridadeDescricaoResponse" />
+
+<xs:element name="buscaNivelPrioridadeId" type="tns:buscaNivelPrioridadeId" />
+
+<xs:element name="buscaNivelPrioridadeIdResponse" type="tns:buscaNivelPrioridadeIdResponse" />
+
+<xs:element name="buscaPdfId" type="tns:buscaPdfId" />
+
+<xs:element name="buscaPdfIdResponse" type="tns:buscaPdfIdResponse" />
+
+<xs:element name="buscaSegmentoCategoria" type="tns:buscaSegmentoCategoria" />
+
+<xs:element name="buscaSegmentoCategoriaResponse" type="tns:buscaSegmentoCategoriaResponse" />
+
+<xs:element name="buscaSegmentoId" type="tns:buscaSegmentoId" />
+
+<xs:element name="buscaSegmentoIdResponse" type="tns:buscaSegmentoIdResponse" />
+
+<xs:element name="buscaTipoContactoDescricao" type="tns:buscaTipoContactoDescricao" />
+
+<xs:element name="buscaTipoContactoDescricaoResponse" type="tns:buscaTipoContactoDescricaoResponse" />
+
+<xs:element name="buscaTipoContactoId" type="tns:buscaTipoContactoId" />
+
+<xs:element name="buscaTipoContactoIdResponse" type="tns:buscaTipoContactoIdResponse" />
+
+<xs:element name="buscaUpload" type="tns:buscaUpload" />
+
+<xs:element name="buscaUploadResponse" type="tns:buscaUploadResponse" />
+
+<xs:element name="buscarEntidadeId" type="tns:buscarEntidadeId" />
+
+<xs:element name="buscarEntidadeIdResponse" type="tns:buscarEntidadeIdResponse" />
+
+<xs:element name="buscarEntidadeNome" type="tns:buscarEntidadeNome" />
+
+<xs:element name="buscarEntidadeNomeResponse" type="tns:buscarEntidadeNomeResponse" />
+
+<xs:element name="buscarEntidadePelaSigla" type="tns:buscarEntidadePelaSigla" />
+
+<xs:element name="buscarEntidadePelaSiglaResponse" type="tns:buscarEntidadePelaSiglaResponse" />
+
+<xs:element name="buscarNacionalidadeDescricao" type="tns:buscarNacionalidadeDescricao" />
+
+<xs:element name="buscarNacionalidadeDescricaoResponse" type="tns:buscarNacionalidadeDescricaoResponse" />
+
+<xs:element name="buscarNacionalidadeId" type="tns:buscarNacionalidadeId" />
+
+<xs:element name="buscarNacionalidadeIdResponse" type="tns:buscarNacionalidadeIdResponse" />
+
+<xs:element name="buscarPessoaBI" type="tns:buscarPessoaBI" />
+
+<xs:element name="buscarPessoaBIResponse" type="tns:buscarPessoaBIResponse" />
+
+<xs:element name="buscarPessoaEmail" type="tns:buscarPessoaEmail" />
+
+<xs:element name="buscarPessoaEmailResponse" type="tns:buscarPessoaEmailResponse" />
+
+<xs:element name="buscarPessoaId" type="tns:buscarPessoaId" />
+
+<xs:element name="buscarPessoaIdResponse" type="tns:buscarPessoaIdResponse" />
+
+<xs:element name="buscarPessoaNome" type="tns:buscarPessoaNome" />
+
+<xs:element name="buscarPessoaNomeApelido" type="tns:buscarPessoaNomeApelido" />
+
+<xs:element name="buscarPessoaNomeApelidoResponse" type="tns:buscarPessoaNomeApelidoResponse" />
+
+<xs:element name="buscarPessoaNomeResponse" type="tns:buscarPessoaNomeResponse" />
+
+<xs:element name="buscarPessoaNuit" type="tns:buscarPessoaNuit" />
+
+<xs:element name="buscarPessoaNuitResponse" type="tns:buscarPessoaNuitResponse" />
+
+<xs:element name="cor" type="tns:cor" />
+
+<xs:element name="listaAgendaContactos" type="tns:listaAgendaContactos" />
+
+<xs:element name="listaAgendaContactosCliente" type="tns:listaAgendaContactosCliente" />
+
+<xs:element name="listaAgendaContactosClienteMicro" type="tns:listaAgendaContactosClienteMicro" />
+
+<xs:element name="listaAgendaContactosClienteMicroResponse" type="tns:listaAgendaContactosClienteMicroResponse" />
+
+<xs:element name="listaAgendaContactosClienteResponse" type="tns:listaAgendaContactosClienteResponse" />
+
+<xs:element name="listaAgendaContactosFornecedor" type="tns:listaAgendaContactosFornecedor" />
+
+<xs:element name="listaAgendaContactosFornecedorResponse" type="tns:listaAgendaContactosFornecedorResponse" />
+
+<xs:element name="listaAgendaContactosFuncionario" type="tns:listaAgendaContactosFuncionario" />
+
+<xs:element name="listaAgendaContactosFuncionarioResponse" type="tns:listaAgendaContactosFuncionarioResponse" />
+
+<xs:element name="listaAgendaContactosResponse" type="tns:listaAgendaContactosResponse" />
+
+<xs:element name="listaAgendaContactosTipoContacto" type="tns:listaAgendaContactosTipoContacto" />
+
+<xs:element name="listaAgendaContactosTipoContactoResponse" type="tns:listaAgendaContactosTipoContactoResponse" />
+
+<xs:element name="listaCidades" type="tns:listaCidades" />
+
+<xs:element name="listaCidadesResponse" type="tns:listaCidadesResponse" />
+
+<xs:element name="listaCores" type="tns:listaCores" />
+
+<xs:element name="listaCoresResponse" type="tns:listaCoresResponse" />
+
+<xs:element name="listaDiaSemanas" type="tns:listaDiaSemanas" />
+
+<xs:element name="listaDiaSemanasResponse" type="tns:listaDiaSemanasResponse" />
+
+<xs:element name="listaEntidades" type="tns:listaEntidades" />
+
+<xs:element name="listaEntidadesResponse" type="tns:listaEntidadesResponse" />
+
+<xs:element name="listaHorarios" type="tns:listaHorarios" />
+
+<xs:element name="listaHorariosResponse" type="tns:listaHorariosResponse" />
+
+<xs:element name="listaListaTelefonicas" type="tns:listaListaTelefonicas" />
+
+<xs:element name="listaListaTelefonicasResponse" type="tns:listaListaTelefonicasResponse" />
+
+<xs:element name="listaNacionalidades" type="tns:listaNacionalidades" />
+
+<xs:element name="listaNacionalidadesResponse" type="tns:listaNacionalidadesResponse" />
+
+<xs:element name="listaNivelPrioridades" type="tns:listaNivelPrioridades" />
+
+<xs:element name="listaNivelPrioridadesResponse" type="tns:listaNivelPrioridadesResponse" />
+
+<xs:element name="listaPdfs" type="tns:listaPdfs" />
+
+<xs:element name="listaPdfsResponse" type="tns:listaPdfsResponse" />
+
+<xs:element name="listaPessoas" type="tns:listaPessoas" />
+
+<xs:element name="listaPessoasBairro" type="tns:listaPessoasBairro" />
+
+<xs:element name="listaPessoasBairroResponse" type="tns:listaPessoasBairroResponse" />
+
+<xs:element name="listaPessoasNacionalidade" type="tns:listaPessoasNacionalidade" />
+
+<xs:element name="listaPessoasNacionalidadeResponse" type="tns:listaPessoasNacionalidadeResponse" />
+
+<xs:element name="listaPessoasResponse" type="tns:listaPessoasResponse" />
+
+<xs:element name="listaPessoasTipo" type="tns:listaPessoasTipo" />
+
+<xs:element name="listaPessoasTipoResponse" type="tns:listaPessoasTipoResponse" />
+
+<xs:element name="listaSegmentos" type="tns:listaSegmentos" />
+
+<xs:element name="listaSegmentosResponse" type="tns:listaSegmentosResponse" />
+
+<xs:element name="listaTipoContactos" type="tns:listaTipoContactos" />
+
+<xs:element name="listaTipoContactosResponse" type="tns:listaTipoContactosResponse" />
+
+<xs:element name="listaTodasPessoas" type="tns:listaTodasPessoas" />
+
+<xs:element name="listaTodasPessoasResponse" type="tns:listaTodasPessoasResponse" />
+
+<xs:element name="persistir_agendaContacto" type="tns:persistir_agendaContacto" />
+
+<xs:element name="persistir_agendaContactoResponse" type="tns:persistir_agendaContactoResponse" />
+
+<xs:element name="persistir_cidade" type="tns:persistir_cidade" />
+
+<xs:element name="persistir_cidadeResponse" type="tns:persistir_cidadeResponse" />
+
+<xs:element name="persistir_cor" type="tns:persistir_cor" />
+
+<xs:element name="persistir_corResponse" type="tns:persistir_corResponse" />
+
+<xs:element name="persistir_diaSemana" type="tns:persistir_diaSemana" />
+
+<xs:element name="persistir_diaSemanaResponse" type="tns:persistir_diaSemanaResponse" />
+
+<xs:element name="persistir_entidade" type="tns:persistir_entidade" />
+
+<xs:element name="persistir_entidadeResponse" type="tns:persistir_entidadeResponse" />
+
+<xs:element name="persistir_horario" type="tns:persistir_horario" />
+
+<xs:element name="persistir_horarioResponse" type="tns:persistir_horarioResponse" />
+
+<xs:element name="persistir_listaTelefonica" type="tns:persistir_listaTelefonica" />
+
+<xs:element name="persistir_listaTelefonicaResponse" type="tns:persistir_listaTelefonicaResponse" />
+
+<xs:element name="persistir_nacionalidade" type="tns:persistir_nacionalidade" />
+
+<xs:element name="persistir_nacionalidadeResponse" type="tns:persistir_nacionalidadeResponse" />
+
+<xs:element name="persistir_nivelPrioridade" type="tns:persistir_nivelPrioridade" />
+
+<xs:element name="persistir_nivelPrioridadeResponse" type="tns:persistir_nivelPrioridadeResponse" />
+
+<xs:element name="persistir_pdf" type="tns:persistir_pdf" />
+
+<xs:element name="persistir_pdfResponse" type="tns:persistir_pdfResponse" />
+
+<xs:element name="persistir_pessoa" type="tns:persistir_pessoa" />
+
+<xs:element name="persistir_pessoaResponse" type="tns:persistir_pessoaResponse" />
+
+<xs:element name="persistir_segmento" type="tns:persistir_segmento" />
+
+<xs:element name="persistir_segmentoResponse" type="tns:persistir_segmentoResponse" />
+
+<xs:element name="persistir_tipoContacto" type="tns:persistir_tipoContacto" />
+
+<xs:element name="persistir_tipoContactoResponse" type="tns:persistir_tipoContactoResponse" />
+
+<xs:element name="persistir_upload" type="tns:persistir_upload" />
+
+<xs:element name="persistir_uploadResponse" type="tns:persistir_uploadResponse" />
+
+<xs:element name="remover_horario" type="tns:remover_horario" />
+
+<xs:element name="remover_horarioResponse" type="tns:remover_horarioResponse" />
+
+<xs:element name="remover_nacionalidade" type="tns:remover_nacionalidade" />
+
+<xs:element name="remover_nacionalidadeResponse" type="tns:remover_nacionalidadeResponse" />
+
+<xs:element name="remover_pessoa" type="tns:remover_pessoa" />
+
+<xs:element name="remover_pessoaResponse" type="tns:remover_pessoaResponse" />
+
+<xs:element name="remover_segmento" type="tns:remover_segmento" />
+
+<xs:element name="remover_segmentoResponse" type="tns:remover_segmentoResponse" />
+
+<xs:element name="remover_upload" type="tns:remover_upload" />
+
+<xs:element name="remover_uploadResponse" type="tns:remover_uploadResponse" />
+
+<xs:complexType name="buscarPessoaId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pessoa">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nacionalidadenaci" type="tns:nacionalidade" minOccurs="0" />
+<xs:element name="pess_actividade" type="xs:string" minOccurs="0" />
+<xs:element name="pess_altura" type="xs:float" minOccurs="0" />
+<xs:element name="pess_apelido" type="xs:string" minOccurs="0" />
+<xs:element name="pess_bairro" type="xs:string" minOccurs="0" />
+<xs:element name="pess_bi" type="xs:string" minOccurs="0" />
+<xs:element name="pess_cPostal" type="xs:string" minOccurs="0" />
+<xs:element name="pess_cidade" type="xs:string" minOccurs="0" />
+<xs:element name="pess_contacto" type="xs:string" minOccurs="0" />
+<xs:element name="pess_contactoMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_contactoPai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_dataCadastro" type="xs:dateTime" minOccurs="0" />
+<xs:element name="pess_dataEmissaoBi" type="xs:string" minOccurs="0" />
+<xs:element name="pess_dataNascimento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="pess_dataValidadeBi" type="xs:string" minOccurs="0" />
+<xs:element name="pess_distrito" type="xs:string" minOccurs="0" />
+<xs:element name="pess_documento" type="xs:string" minOccurs="0" />
+<xs:element name="pess_educacao" type="xs:string" minOccurs="0" />
+<xs:element name="pess_email" type="xs:string" minOccurs="0" />
+<xs:element name="pess_estadoCivil" type="xs:string" minOccurs="0" />
+<xs:element name="pess_foto" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoActividae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoAlimentacao" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoBebida" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoCultura" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoEntretenimento" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoFilme" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoMusica" type="xs:string" minOccurs="0" />
+<xs:element name="pess_grauParentesco" type="xs:string" minOccurs="0" />
+<xs:element name="pess_hobbie" type="xs:string" minOccurs="0" />
+<xs:element name="pess_id" type="xs:int" />
+<xs:element name="pess_lingua" type="xs:string" minOccurs="0" />
+<xs:element name="pess_localTrabalho" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nome" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nomeMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nomePai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nuit" type="xs:string" minOccurs="0" />
+<xs:element name="pess_numeroCasa" type="xs:string" minOccurs="0" />
+<xs:element name="pess_origemRegisto" type="xs:string" minOccurs="0" />
+<xs:element name="pess_pais" type="xs:string" minOccurs="0" />
+<xs:element name="pess_profissaoMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_profissaoPai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_provincia" type="xs:string" minOccurs="0" />
+<xs:element name="pess_raca" type="xs:string" minOccurs="0" />
+<xs:element name="pess_relegiao" type="xs:string" minOccurs="0" />
+<xs:element name="pess_responsavel" type="xs:string" minOccurs="0" />
+<xs:element name="pess_rua" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sector" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sexo" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sinais" type="xs:string" minOccurs="0" />
+<xs:element name="pess_skills" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sobre" type="xs:string" minOccurs="0" />
+<xs:element name="pess_tipo" type="xs:string" minOccurs="0" />
+<xs:element name="pess_trabalhoMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_trabalhoPai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_vicios" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="entidade">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="enti_capital" type="xs:double" />
+<xs:element name="enti_chaveSistema" type="xs:string" minOccurs="0" />
+<xs:element name="enti_codigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="enti_contactos1" type="xs:string" minOccurs="0" />
+<xs:element name="enti_contactos2" type="xs:string" minOccurs="0" />
+<xs:element name="enti_contactos3" type="xs:string" minOccurs="0" />
+<xs:element name="enti_dataFinalAssistencia" type="xs:dateTime" minOccurs="0" />
+<xs:element name="enti_dataInicioAssitencia" type="xs:dateTime" minOccurs="0" />
+<xs:element name="enti_delegacao" type="xs:string" minOccurs="0" />
+<xs:element name="enti_distrito" type="xs:string" minOccurs="0" />
+<xs:element name="enti_dominio" type="xs:string" minOccurs="0" />
+<xs:element name="enti_email" type="xs:string" minOccurs="0" />
+<xs:element name="enti_endereco" type="xs:string" minOccurs="0" />
+<xs:element name="enti_estadoSistema" type="xs:string" minOccurs="0" />
+<xs:element name="enti_generoActividade" type="xs:string" minOccurs="0" />
+<xs:element name="enti_id" type="xs:int" />
+<xs:element name="enti_iva" type="xs:double" />
+<xs:element name="enti_licenca" type="xs:string" minOccurs="0" />
+<xs:element name="enti_linguaSistema" type="xs:string" minOccurs="0" />
+<xs:element name="enti_logotipo" type="xs:string" minOccurs="0" />
+<xs:element name="enti_macServidor" type="xs:string" minOccurs="0" />
+<xs:element name="enti_newsletter" type="xs:boolean" />
+<xs:element name="enti_nome" type="xs:string" minOccurs="0" />
+<xs:element name="enti_nuit" type="xs:string" minOccurs="0" />
+<xs:element name="enti_pais" type="xs:string" minOccurs="0" />
+<xs:element name="enti_pessoaContacto" type="xs:string" minOccurs="0" />
+<xs:element name="enti_provincia" type="xs:string" minOccurs="0" />
+<xs:element name="enti_sigla" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nacionalidade">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="naci_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="naci_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosTipoContacto">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosTipoContactoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agendaContacto">
+<xs:sequence>
+<xs:element name="agc_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="agc_id" type="xs:int" />
+<xs:element name="cliente" type="tns:cliente" minOccurs="0" />
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="fornecedor" type="tns:fornecedor" minOccurs="0" />
+<xs:element name="funcionario" type="tns:funcionario" minOccurs="0" />
+<xs:element name="tipoContacto" type="tns:tipoContacto" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cliente">
+<xs:sequence>
+<xs:element name="clie_categoria" type="xs:string" minOccurs="0" />
+<xs:element name="clie_contaGeral" type="xs:string" minOccurs="0" />
+<xs:element name="clie_funcao" type="xs:string" minOccurs="0" />
+<xs:element name="clie_id" type="xs:int" />
+<xs:element name="clie_nid" type="xs:int" />
+<xs:element name="clie_saldoCredito" type="xs:double" />
+<xs:element name="clie_saldoDebito" type="xs:double" />
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="pessoapess" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fornecedor">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="for_contaGeral" type="xs:string" minOccurs="0" />
+<xs:element name="for_contacto" type="xs:string" minOccurs="0" />
+<xs:element name="for_email" type="xs:string" minOccurs="0" />
+<xs:element name="for_endereco" type="xs:string" minOccurs="0" />
+<xs:element name="for_id" type="xs:int" />
+<xs:element name="for_nome" type="xs:string" minOccurs="0" />
+<xs:element name="for_nuit" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="funcionario">
+<xs:sequence>
+<xs:element name="cargo" type="tns:cargo" minOccurs="0" />
+<xs:element name="departamento" type="tns:departamento" minOccurs="0" />
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="firmafirm" type="tns:firma" minOccurs="0" />
+<xs:element name="func_badgnumber" type="xs:string" minOccurs="0" />
+<xs:element name="func_conta" type="xs:string" minOccurs="0" />
+<xs:element name="func_dataAdmissao" type="xs:dateTime" minOccurs="0" />
+<xs:element name="func_dataValidade" type="xs:dateTime" minOccurs="0" />
+<xs:element name="func_dependentes" type="xs:int" />
+<xs:element name="func_formaPagamento" type="xs:string" minOccurs="0" />
+<xs:element name="func_id" type="xs:int" />
+<xs:element name="func_nib" type="xs:string" minOccurs="0" />
+<xs:element name="func_numero" type="xs:int" minOccurs="0" />
+<xs:element name="func_salario" type="xs:double" />
+<xs:element name="func_salario_dia" type="xs:double" />
+<xs:element name="func_salario_hora" type="xs:double" />
+<xs:element name="func_segurancaSocial" type="xs:string" minOccurs="0" />
+<xs:element name="func_tipo" type="xs:string" minOccurs="0" />
+<xs:element name="func_tipoContrato" type="xs:string" minOccurs="0" />
+<xs:element name="func_turno" type="xs:int" />
+<xs:element name="habilitacao" type="tns:habilitacao" minOccurs="0" />
+<xs:element name="pessoapess" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cargo">
+<xs:sequence>
+<xs:element name="car_id" type="xs:int" />
+<xs:element name="car_nome" type="xs:string" minOccurs="0" />
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="departamento">
+<xs:sequence>
+<xs:element name="administracao" type="tns:administracao" minOccurs="0" />
+<xs:element name="dep_id" type="xs:int" />
+<xs:element name="dep_nome" type="xs:string" minOccurs="0" />
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nivelPrioridade" type="tns:nivelPrioridade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="administracao">
+<xs:sequence>
+<xs:element name="adm_id" type="xs:int" />
+<xs:element name="adm_nome" type="xs:string" minOccurs="0" />
+<xs:element name="empresa" type="tns:entidade" minOccurs="0" />
+<xs:element name="encrypted" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nivelPrioridade">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="nvp_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="nvp_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="firma">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="firm_contacto" type="xs:string" minOccurs="0" />
+<xs:element name="firm_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="firm_endereco" type="xs:string" minOccurs="0" />
+<xs:element name="firm_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="habilitacao">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="habi_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="habi_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoContacto">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="tipc_id" type="xs:int" />
+<xs:element name="tipc_nome" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_pdf">
+<xs:sequence>
+<xs:element name="pdf" type="tns:pdf" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pdf">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="pdf_data" type="xs:dateTime" minOccurs="0" />
+<xs:element name="pdf_descricaoDocumento" type="xs:string" minOccurs="0" />
+<xs:element name="pdf_hora" type="xs:string" minOccurs="0" />
+<xs:element name="pdf_id" type="xs:int" />
+<xs:element name="pdf_nomeDocumento" type="xs:string" minOccurs="0" />
+<xs:element name="pdf_subPath" type="xs:string" minOccurs="0" />
+<xs:element name="pdf_tipoDocumento" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_pdfResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaAgendaContactoId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaAgendaContactoIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_entidade">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_entidadeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaNomeApelido">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nome" type="xs:string" minOccurs="0" />
+<xs:element name="apelido" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaNomeApelidoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDiaSemanas">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaDiaSemanasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:diaSemana" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="diaSemana">
+<xs:sequence>
+<xs:element name="dias_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="dias_id" type="xs:int" />
+<xs:element name="encrypted" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaPdfId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaPdfIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pdf" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarNacionalidadeId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarNacionalidadeIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nacionalidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarNacionalidadeDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarNacionalidadeDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nacionalidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoContactoId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoContactoIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoContacto" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactos">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaTodasPessoas">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaTodasPessoasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaListaTelefonicaId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaListaTelefonicaIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaTelefonica" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaTelefonica">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="lst_categoria" type="xs:string" minOccurs="0" />
+<xs:element name="lst_id" type="xs:int" />
+<xs:element name="lst_nome" type="xs:string" minOccurs="0" />
+<xs:element name="lst_telefone" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaHorario">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="hora_inicio" type="xs:string" minOccurs="0" />
+<xs:element name="hora_fim" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaHorarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:horario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="horario">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="hora_fim" type="xs:string" minOccurs="0" />
+<xs:element name="hora_id" type="xs:int" />
+<xs:element name="hora_inicio" type="xs:string" minOccurs="0" />
+<xs:element name="hora_usado" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_horario">
+<xs:sequence>
+<xs:element name="horario" type="tns:horario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_horarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaNivelPrioridades">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaNivelPrioridadesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nivelPrioridade" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_horario">
+<xs:sequence>
+<xs:element name="horario" type="tns:horario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_horarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaPessoas">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaDiaSemanaDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaDiaSemanaDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:diaSemana" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasTipo">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="tipo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasTipoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarEntidadePelaSigla">
+<xs:sequence>
+<xs:element name="sigla" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarEntidadePelaSiglaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaNacionalidades">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaNacionalidadesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nacionalidade" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCorId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCorIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cor" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cor">
+<xs:sequence>
+<xs:element name="cor_codigo" type="xs:string" minOccurs="0" />
+<xs:element name="cor_codigoHexaDecimal" type="xs:string" minOccurs="0" />
+<xs:element name="cor_id" type="xs:int" />
+<xs:element name="cor_nome" type="xs:string" minOccurs="0" />
+<xs:element name="encrypted" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoContactoDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoContactoDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoContacto" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPdfs">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaPdfsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pdf" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSegmentoId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSegmentoIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:segmento" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="segmento">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="seg_categoria" type="xs:string" minOccurs="0" />
+<xs:element name="seg_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="seg_id" type="xs:int" />
+<xs:element name="seg_numero" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaSegmentos">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaSegmentosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:segmento" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaUpload">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaUploadResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:upload" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="upload">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="upl_file" type="xs:string" minOccurs="0" />
+<xs:element name="upl_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_nacionalidade">
+<xs:sequence>
+<xs:element name="nacionalidade" type="tns:nacionalidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_nacionalidadeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaBI">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="bi" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaBIResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaListaTelefonicas">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaListaTelefonicasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaTelefonica" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaCidades">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaCidadesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cidade" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cidade">
+<xs:sequence>
+<xs:element name="cida_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="cida_id" type="xs:int" />
+<xs:element name="encrypted" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosFornecedor">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosFornecedorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasBairro">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="bairro" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasBairroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEntidades">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaEntidadesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:entidade" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosFuncionario">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosFuncionarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaDiaSemanaId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaDiaSemanaIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:diaSemana" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_segmento">
+<xs:sequence>
+<xs:element name="segmento" type="tns:segmento" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_segmentoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaCidadeDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCidadeDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaHorarioId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaHorarioIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:horario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_listaTelefonica">
+<xs:sequence>
+<xs:element name="listaTelefonica" type="tns:listaTelefonica" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_listaTelefonicaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_tipoContacto">
+<xs:sequence>
+<xs:element name="tipoContacto" type="tns:tipoContacto" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_tipoContactoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaNuit">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nuit" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaNuitResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosClienteMicro">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosClienteMicroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaTipoContactos">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaTipoContactosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarEntidadeNome">
+<xs:sequence>
+<xs:element name="nome" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarEntidadeNomeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCorDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCorDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cor" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelPrioridadeId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelPrioridadeIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nivelPrioridade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaCores">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaCoresResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cor" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasNacionalidade">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nacionalidade" type="tns:nacionalidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaPessoasNacionalidadeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_diaSemana">
+<xs:sequence>
+<xs:element name="diaSemana" type="tns:diaSemana" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_diaSemanaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_nivelPrioridade">
+<xs:sequence>
+<xs:element name="nivelPrioridade" type="tns:nivelPrioridade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_nivelPrioridadeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_nacionalidade">
+<xs:sequence>
+<xs:element name="nacionalidade" type="tns:nacionalidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_nacionalidadeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaListaTelefonicaDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaListaTelefonicaDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:listaTelefonica" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaEmail">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaEmailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_cidade">
+<xs:sequence>
+<xs:element name="cidade" type="tns:cidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_cidadeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaNome">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nome" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarPessoaNomeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSegmentoCategoria">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSegmentoCategoriaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:segmento" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarEntidadeId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarEntidadeIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCidadeId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaCidadeIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosCliente">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaAgendaContactosClienteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:agendaContacto" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_upload">
+<xs:sequence>
+<xs:element name="upload" type="tns:upload" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_uploadResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_cor">
+<xs:sequence>
+<xs:element name="cor" type="tns:cor" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_corResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="remover_pessoa">
+<xs:sequence>
+<xs:element name="pessoa" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_pessoaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaNivelPrioridadeDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelPrioridadeDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nivelPrioridade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_agendaContacto">
+<xs:sequence>
+<xs:element name="agendaContacto" type="tns:agendaContacto" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_agendaContactoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="remover_upload">
+<xs:sequence>
+<xs:element name="upload" type="tns:upload" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_uploadResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_pessoa">
+<xs:sequence>
+<xs:element name="pessoa" type="tns:pessoa" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_pessoaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="remover_segmento">
+<xs:sequence>
+<xs:element name="segmento" type="tns:segmento" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_segmentoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaHorarios">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaHorariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:horario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

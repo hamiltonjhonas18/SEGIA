@@ -1,0 +1,59 @@
+/*
+ * CENTRAL MASTER SERVER APPLICATION (Web, Desktop and Mobile)
+ * 
+ * [DEVELOPER]:    Hamilton Jhonas  | Software Engennier
+ *   [CONTACT]:    hamilton.jhonas18@gmail.com  | + (258) 82 690 07984/ 84 690 07984
+ * 
+ * This Server is based on Hibernate framework, Webservices, Servlets and supported by JDK 1.8 
+ * All rights reserved  * 
+
+ */
+package mz.co.centralserver.daoimpl.recursoshumanos;
+
+import java.util.List;
+import mz.co.centralserver.dao.DAOGenerico;
+import mz.co.centralserver.model.gestao.Entidade;
+import mz.co.centralserver.model.recursoshumanos.Departamento;
+
+/**
+ *
+ * @author HJC2K8
+ */
+public class DepartamentoDAOImpl {
+
+    private DAOGenerico daog;
+
+    public DepartamentoDAOImpl() {
+        daog = new DAOGenerico(Departamento.class);
+    }
+
+    public Departamento getDepartamento(int id) {
+        return (Departamento) daog.buscarEntidadePorQuery("from Departamento where dep_id = " + id);
+    }
+
+    public Departamento getDepartamento(Entidade entidade, String descricao) {
+        return (Departamento) daog.buscarEntidadePorQuery("from Departamento where dep_nome LIKE '" + descricao + "' AND entidade_enti_id = " + entidade.getEnti_id());
+    }
+
+    public List<Departamento> listaDepartamentos(Entidade entidade) {
+        return daog.buscarPorConsulta("from Departamento where entidade_enti_id = " + entidade.getEnti_id() + " order by dep_nome asc");
+    }
+
+    public List<Departamento> listaDepartamentosAdministracao(Entidade entidade, int id) {
+        return daog.buscarPorConsulta("from Departamento administracao_adm_id = " + id + " AND entidade_enti_id = " + entidade.getEnti_id() + " order by dep_nome asc");
+    }
+
+    public List<Departamento> listaDepartamentosNivelPrioridade(Entidade entidade, int id) {
+        return daog.buscarPorConsulta("from Departamento nivelPrioridade_nvp_id = " + id + " AND entidade_enti_id = " + entidade.getEnti_id() + " order by dep_nome asc");
+    }
+
+    public void persistir_departamento(Departamento departamento) {
+        daog = new DAOGenerico(departamento);
+        daog.inserir_actualizar();
+    }
+
+    public void remover_departamento(Departamento departamento) {
+        daog = new DAOGenerico(departamento);
+        daog.excluir();
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://appserver:8080/appserver/AuthenticationWSrv?wsdl" uri="xml-resources/web-service-references/AuthenticationWSrv/wsdl/appserver_8080/appserver/AuthenticationWSrv.wsdl"/>
+    <system systemId="http://appserver:8080/appserver/AuthenticationWSrv?xsd=1" uri="xml-resources/web-service-references/AuthenticationWSrv/wsdl/appserver_8080/appserver/AuthenticationWSrv.xsd_1.xsd"/>
+    <system systemId="http://appserver:8080/appserver/ControleAcessoWSrv?wsdl" uri="wsdl/appserver_8080/appserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://appserver:8080/appserver/ControleAcessoWSrv?xsd=1" uri="wsdl/appserver_8080/appserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/appserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_8080/appserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:8080/appserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_8080/appserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/appserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_8085/appserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/appserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_8085/appserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/inefpserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_8085/inefpserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/inefpserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_8085/inefpserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/educationserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_8085/educationserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/educationserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_8085/educationserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/enaserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_8085/enaserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/enaserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_8085/enaserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:9107/enaserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_9107/enaserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:9107/enaserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_9107/enaserver/ControleAcessoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/segiaserver/ControleAcessoWSrv?wsdl" uri="wsdl/localhost_8085/segiaserver/ControleAcessoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/segiaserver/ControleAcessoWSrv?xsd=1" uri="wsdl/localhost_8085/segiaserver/ControleAcessoWSrv.xsd_1.xsd"/>
+</catalog>

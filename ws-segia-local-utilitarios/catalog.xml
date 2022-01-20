@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://appserver:8080/appserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/appserver_8080/appserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://appserver:8080/appserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/appserver_8080/appserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/appserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8080/appserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:8080/appserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8080/appserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/appserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/appserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/appserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/appserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/inefpserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/inefpserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/inefpserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/inefpserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/educationserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/educationserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/educationserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/educationserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/enaserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/enaserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/enaserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/enaserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:9107/enaserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_9107/enaserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:9107/enaserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_9107/enaserver/UtilitariosWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/segiaserver/UtilitariosWSrv?wsdl" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/segiaserver/UtilitariosWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/segiaserver/UtilitariosWSrv?xsd=1" uri="xml-resources/web-service-references/UtilitariosWSrv/wsdl/localhost_8085/segiaserver/UtilitariosWSrv.xsd_1.xsd"/>
+</catalog>

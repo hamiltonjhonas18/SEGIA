@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://appserver:8080/appserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/appserver_8080/appserver/IspcWSrv.wsdl"/>
+    <system systemId="http://appserver:8080/appserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/appserver_8080/appserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/appserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8080/appserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8080/appserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8080/appserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/appserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/appserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/appserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/appserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/inefpserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/inefpserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/inefpserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/inefpserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/dciserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/dciserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/dciserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/dciserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/contabilidadeserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/contabilidadeserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/contabilidadeserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/contabilidadeserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/hcmserver/IspcWSrv?wsdl" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/hcmserver/IspcWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/hcmserver/IspcWSrv?xsd=1" uri="xml-resources/web-service-references/IspcWSrv/wsdl/localhost_8085/hcmserver/IspcWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/hcmserver/ArquivoWSrv?wsdl" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_8085/hcmserver/ArquivoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/hcmserver/ArquivoWSrv?xsd=1" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_8085/hcmserver/ArquivoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/logisticaserver/ArquivoWSrv?wsdl" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_8085/logisticaserver/ArquivoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/logisticaserver/ArquivoWSrv?xsd=1" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_8085/logisticaserver/ArquivoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:9107/executiveserver/ArquivoWSrv?wsdl" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_9107/executiveserver/ArquivoWSrv.wsdl"/>
+    <system systemId="http://localhost:9107/executiveserver/ArquivoWSrv?xsd=1" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_9107/executiveserver/ArquivoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/executiveserver/ArquivoWSrv?wsdl" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_8085/executiveserver/ArquivoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/executiveserver/ArquivoWSrv?xsd=1" uri="xml-resources/web-service-references/ArquivoWSrv/wsdl/localhost_8085/executiveserver/ArquivoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/educstatserver/EducStatWSrv?wsdl" uri="wsdl/localhost_8085/educstatserver/EducStatWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/educstatserver/EducStatWSrv?xsd=1" uri="wsdl/localhost_8085/educstatserver/EducStatWSrv.xsd_1.xsd"/>
+</catalog>

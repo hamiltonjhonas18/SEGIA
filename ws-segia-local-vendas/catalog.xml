@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8085/inefpserver/VendasWSrv?wsdl" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/inefpserver/VendasWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/inefpserver/VendasWSrv?xsd=1" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/inefpserver/VendasWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/educationserver/VendasWSrv?wsdl" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/educationserver/VendasWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/educationserver/VendasWSrv?xsd=1" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/educationserver/VendasWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/enaserver/VendasWSrv?wsdl" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/enaserver/VendasWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/enaserver/VendasWSrv?xsd=1" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/enaserver/VendasWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:9107/enaserver/VendasWSrv?wsdl" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_9107/enaserver/VendasWSrv.wsdl"/>
+    <system systemId="http://localhost:9107/enaserver/VendasWSrv?xsd=1" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_9107/enaserver/VendasWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/segiaserver/VendasWSrv?wsdl" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/segiaserver/VendasWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/segiaserver/VendasWSrv?xsd=1" uri="xml-resources/web-service-references/VendasWSrv/wsdl/localhost_8085/segiaserver/VendasWSrv.xsd_1.xsd"/>
+</catalog>

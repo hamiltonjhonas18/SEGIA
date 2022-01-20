@@ -1,0 +1,10 @@
+${licenseFirst}
+${licensePrefix}CENTRAL MASTER SERVER APPLICATION (Web, Desktop and Mobile)
+${licensePrefix}
+${licensePrefix}[DEVELOPER]:    Hamilton Jhonas  | Software Engennier
+${licensePrefix}  [CONTACT]:    hamilton.jhonas18@gmail.com  | + (258) 82 690 07984/ 84 690 07984
+${licensePrefix}
+${licensePrefix}This Server is based on Hibernate framework, Webservices, Servlets and supported by JDK 1.8 
+${licensePrefix}All rights reserved ${licensePrefix}
+
+${licenseLast}

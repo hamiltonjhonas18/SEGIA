@@ -1,0 +1,52 @@
+/*
+ * CENTRAL MASTER SERVER APPLICATION (Web, Desktop and Mobile)
+ * 
+ * [DEVELOPER]:    Hamilton Jhonas  | Software Engennier
+ *   [CONTACT]:    hamilton.jhonas18@gmail.com  | + (258) 82 690 07984/ 84 690 07984
+ * 
+ * This Server is based on Hibernate framework, Webservices, Servlets and supported by JDK 1.8 
+ * All rights reserved  * 
+
+ */
+package mz.co.centralserver.daoimpl.documento;
+
+import java.util.List;
+import mz.co.centralserver.dao.DAOGenerico;
+import mz.co.centralserver.model.documento.Categoria;
+import mz.co.centralserver.model.gestao.Entidade;
+
+/**
+ *
+ * @author HJC2K8
+ */
+public class CategoriaDAOImpl {
+
+    private DAOGenerico daog;
+
+    public CategoriaDAOImpl() {
+        daog = new DAOGenerico(Categoria.class);
+    }
+
+    public Categoria getCategoria(int id) {
+        return (Categoria) daog.buscarEntidadePorQuery("from Categoria where cate_id = " + id);
+    }
+
+    public Categoria getCategoria(Entidade entidade, String descricao) {
+        return (Categoria) daog.buscarEntidadePorQuery("from Categoria where cate_descricao LIKE '" + descricao + "' AND entidade_enti_id = " + entidade.getEnti_id());
+    }
+
+    public List<Categoria> listaCategorias(Entidade entidade) {
+        return daog.buscarPorConsulta("from Categoria where entidade_enti_id = " + entidade.getEnti_id() + " order by cate_id asc");
+
+    }
+
+    public void persistir_categoria(Categoria categoria) {
+        daog = new DAOGenerico(categoria);
+        daog.inserir_actualizar();
+    }
+
+    public void remover_categoria(Categoria categoria) {
+        daog = new DAOGenerico(categoria);
+        daog.excluir();
+    }
+}

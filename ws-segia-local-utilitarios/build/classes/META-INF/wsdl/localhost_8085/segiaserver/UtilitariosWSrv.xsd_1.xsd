@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservice.centralserver.co.mz/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.centralserver.co.mz/">
+
+<xs:element name="buscaBadgeNumber" type="tns:buscaBadgeNumber" />
+
+<xs:element name="buscaBadgeNumberResponse" type="tns:buscaBadgeNumberResponse" />
+
+<xs:element name="enviar_email" type="tns:enviar_email" />
+
+<xs:element name="enviar_emailResponse" type="tns:enviar_emailResponse" />
+
+<xs:element name="registrar_excepcao" type="tns:registrar_excepcao" />
+
+<xs:element name="registrar_excepcaoResponse" type="tns:registrar_excepcaoResponse" />
+
+<xs:complexType name="enviar_email">
+<xs:sequence>
+<xs:element name="to" type="xs:string" minOccurs="0" />
+<xs:element name="subject" type="xs:string" minOccurs="0" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="category" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="enviar_emailResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="registrar_excepcao">
+<xs:sequence>
+<xs:element name="datetime" type="xs:string" minOccurs="0" />
+<xs:element name="msg" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrar_excepcaoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaBadgeNumber">
+<xs:sequence>
+<xs:element name="prefix" type="xs:string" minOccurs="0" />
+<xs:element name="number" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaBadgeNumberResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

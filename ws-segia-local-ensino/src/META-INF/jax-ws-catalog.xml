@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://appserver:8080/appserver/EnsinoWSrv?wsdl" uri="wsdl/appserver_8080/appserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://appserver:8080/appserver/EnsinoWSrv?xsd=1" uri="wsdl/appserver_8080/appserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/appserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_8080/appserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:8080/appserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_8080/appserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/appserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_8085/appserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/appserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_8085/appserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/inefpserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_8085/inefpserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/inefpserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_8085/inefpserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/educationserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_8085/educationserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/educationserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_8085/educationserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/enaserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_8085/enaserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/enaserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_8085/enaserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:9107/enaserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_9107/enaserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:9107/enaserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_9107/enaserver/EnsinoWSrv.xsd_1.xsd"/>
+    <system systemId="http://localhost:8085/segiaserver/EnsinoWSrv?wsdl" uri="wsdl/localhost_8085/segiaserver/EnsinoWSrv.wsdl"/>
+    <system systemId="http://localhost:8085/segiaserver/EnsinoWSrv?xsd=1" uri="wsdl/localhost_8085/segiaserver/EnsinoWSrv.xsd_1.xsd"/>
+</catalog>

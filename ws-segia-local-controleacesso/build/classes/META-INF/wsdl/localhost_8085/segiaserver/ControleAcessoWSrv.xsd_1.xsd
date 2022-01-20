@@ -1,0 +1,1268 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservice.centralserver.co.mz/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.centralserver.co.mz/">
+
+<xs:element name="alterarEstado" type="tns:alterarEstado" />
+
+<xs:element name="alterarEstadoResponse" type="tns:alterarEstadoResponse" />
+
+<xs:element name="autenticar" type="tns:autenticar" />
+
+<xs:element name="autenticarResponse" type="tns:autenticarResponse" />
+
+<xs:element name="buscaFormularioDescricao" type="tns:buscaFormularioDescricao" />
+
+<xs:element name="buscaFormularioDescricaoResponse" type="tns:buscaFormularioDescricaoResponse" />
+
+<xs:element name="buscaFormularioId" type="tns:buscaFormularioId" />
+
+<xs:element name="buscaFormularioIdResponse" type="tns:buscaFormularioIdResponse" />
+
+<xs:element name="buscaFormulariosUsuarioId" type="tns:buscaFormulariosUsuarioId" />
+
+<xs:element name="buscaFormulariosUsuarioIdResponse" type="tns:buscaFormulariosUsuarioIdResponse" />
+
+<xs:element name="buscaFormulariosUsuarioModuloUsuario" type="tns:buscaFormulariosUsuarioModuloUsuario" />
+
+<xs:element name="buscaFormulariosUsuarioModuloUsuarioResponse" type="tns:buscaFormulariosUsuarioModuloUsuarioResponse" />
+
+<xs:element name="buscaModuloAcessoId" type="tns:buscaModuloAcessoId" />
+
+<xs:element name="buscaModuloAcessoIdResponse" type="tns:buscaModuloAcessoIdResponse" />
+
+<xs:element name="buscaModuloUsuarioId" type="tns:buscaModuloUsuarioId" />
+
+<xs:element name="buscaModuloUsuarioIdResponse" type="tns:buscaModuloUsuarioIdResponse" />
+
+<xs:element name="buscaModuloUsuarioReferencia" type="tns:buscaModuloUsuarioReferencia" />
+
+<xs:element name="buscaModuloUsuarioReferenciaResponse" type="tns:buscaModuloUsuarioReferenciaResponse" />
+
+<xs:element name="buscaModulosUsuario" type="tns:buscaModulosUsuario" />
+
+<xs:element name="buscaModulosUsuarioId" type="tns:buscaModulosUsuarioId" />
+
+<xs:element name="buscaModulosUsuarioIdResponse" type="tns:buscaModulosUsuarioIdResponse" />
+
+<xs:element name="buscaModulosUsuarioResponse" type="tns:buscaModulosUsuarioResponse" />
+
+<xs:element name="buscaNivelAcessoDescricao" type="tns:buscaNivelAcessoDescricao" />
+
+<xs:element name="buscaNivelAcessoDescricaoResponse" type="tns:buscaNivelAcessoDescricaoResponse" />
+
+<xs:element name="buscaNivelAcessoId" type="tns:buscaNivelAcessoId" />
+
+<xs:element name="buscaNivelAcessoIdResponse" type="tns:buscaNivelAcessoIdResponse" />
+
+<xs:element name="buscaSistemaDescricao" type="tns:buscaSistemaDescricao" />
+
+<xs:element name="buscaSistemaDescricaoResponse" type="tns:buscaSistemaDescricaoResponse" />
+
+<xs:element name="buscaSistemaId" type="tns:buscaSistemaId" />
+
+<xs:element name="buscaSistemaIdResponse" type="tns:buscaSistemaIdResponse" />
+
+<xs:element name="buscaTipoUsuarioDescricao" type="tns:buscaTipoUsuarioDescricao" />
+
+<xs:element name="buscaTipoUsuarioDescricaoResponse" type="tns:buscaTipoUsuarioDescricaoResponse" />
+
+<xs:element name="buscaTipoUsuarioId" type="tns:buscaTipoUsuarioId" />
+
+<xs:element name="buscaTipoUsuarioIdResponse" type="tns:buscaTipoUsuarioIdResponse" />
+
+<xs:element name="buscar_usuario" type="tns:buscar_usuario" />
+
+<xs:element name="buscar_usuarioResponse" type="tns:buscar_usuarioResponse" />
+
+<xs:element name="buscar_usuario_id" type="tns:buscar_usuario_id" />
+
+<xs:element name="buscar_usuario_idResponse" type="tns:buscar_usuario_idResponse" />
+
+<xs:element name="listaBrowsers" type="tns:listaBrowsers" />
+
+<xs:element name="listaBrowsersResponse" type="tns:listaBrowsersResponse" />
+
+<xs:element name="listaBrowsersUsuario" type="tns:listaBrowsersUsuario" />
+
+<xs:element name="listaBrowsersUsuarioResponse" type="tns:listaBrowsersUsuarioResponse" />
+
+<xs:element name="listaDosUsuariosEntidade" type="tns:listaDosUsuariosEntidade" />
+
+<xs:element name="listaDosUsuariosEntidadeLimit" type="tns:listaDosUsuariosEntidadeLimit" />
+
+<xs:element name="listaDosUsuariosEntidadeLimitResponse" type="tns:listaDosUsuariosEntidadeLimitResponse" />
+
+<xs:element name="listaDosUsuariosEntidadeResponse" type="tns:listaDosUsuariosEntidadeResponse" />
+
+<xs:element name="listaDosUsuariosLimit" type="tns:listaDosUsuariosLimit" />
+
+<xs:element name="listaDosUsuariosLimitResponse" type="tns:listaDosUsuariosLimitResponse" />
+
+<xs:element name="listaFormularios" type="tns:listaFormularios" />
+
+<xs:element name="listaFormulariosResponse" type="tns:listaFormulariosResponse" />
+
+<xs:element name="listaFormulariosSistema" type="tns:listaFormulariosSistema" />
+
+<xs:element name="listaFormulariosSistemaResponse" type="tns:listaFormulariosSistemaResponse" />
+
+<xs:element name="listaFormulariosUsuarios" type="tns:listaFormulariosUsuarios" />
+
+<xs:element name="listaFormulariosUsuariosResponse" type="tns:listaFormulariosUsuariosResponse" />
+
+<xs:element name="listaFormulariosUsuarios_Usuario" type="tns:listaFormulariosUsuarios_Usuario" />
+
+<xs:element name="listaFormulariosUsuarios_UsuarioResponse" type="tns:listaFormulariosUsuarios_UsuarioResponse" />
+
+<xs:element name="listaLogsData" type="tns:listaLogsData" />
+
+<xs:element name="listaLogsDataResponse" type="tns:listaLogsDataResponse" />
+
+<xs:element name="listaLogsDataUsuario" type="tns:listaLogsDataUsuario" />
+
+<xs:element name="listaLogsDataUsuarioLimite" type="tns:listaLogsDataUsuarioLimite" />
+
+<xs:element name="listaLogsDataUsuarioLimiteResponse" type="tns:listaLogsDataUsuarioLimiteResponse" />
+
+<xs:element name="listaLogsDataUsuarioResponse" type="tns:listaLogsDataUsuarioResponse" />
+
+<xs:element name="listaLogsPeriodo" type="tns:listaLogsPeriodo" />
+
+<xs:element name="listaLogsPeriodoResponse" type="tns:listaLogsPeriodoResponse" />
+
+<xs:element name="listaLogsSistema" type="tns:listaLogsSistema" />
+
+<xs:element name="listaLogsSistemaResponse" type="tns:listaLogsSistemaResponse" />
+
+<xs:element name="listaModuloAcessos" type="tns:listaModuloAcessos" />
+
+<xs:element name="listaModuloAcessosEntidade" type="tns:listaModuloAcessosEntidade" />
+
+<xs:element name="listaModuloAcessosEntidadeResponse" type="tns:listaModuloAcessosEntidadeResponse" />
+
+<xs:element name="listaModuloAcessosResponse" type="tns:listaModuloAcessosResponse" />
+
+<xs:element name="listaModuloAcessosSistema" type="tns:listaModuloAcessosSistema" />
+
+<xs:element name="listaModuloAcessosSistemaEntidade" type="tns:listaModuloAcessosSistemaEntidade" />
+
+<xs:element name="listaModuloAcessosSistemaEntidadeResponse" type="tns:listaModuloAcessosSistemaEntidadeResponse" />
+
+<xs:element name="listaModuloAcessosSistemaResponse" type="tns:listaModuloAcessosSistemaResponse" />
+
+<xs:element name="listaModuloUsuarios" type="tns:listaModuloUsuarios" />
+
+<xs:element name="listaModuloUsuariosResponse" type="tns:listaModuloUsuariosResponse" />
+
+<xs:element name="listaModuloUsuariosUsuario" type="tns:listaModuloUsuariosUsuario" />
+
+<xs:element name="listaModuloUsuariosUsuarioResponse" type="tns:listaModuloUsuariosUsuarioResponse" />
+
+<xs:element name="listaModuloUsuariosUsuarioVisitas" type="tns:listaModuloUsuariosUsuarioVisitas" />
+
+<xs:element name="listaModuloUsuariosUsuarioVisitasResponse" type="tns:listaModuloUsuariosUsuarioVisitasResponse" />
+
+<xs:element name="listaModulosUsuarios" type="tns:listaModulosUsuarios" />
+
+<xs:element name="listaModulosUsuariosResponse" type="tns:listaModulosUsuariosResponse" />
+
+<xs:element name="listaNiveisAcesso" type="tns:listaNiveisAcesso" />
+
+<xs:element name="listaNiveisAcessoResponse" type="tns:listaNiveisAcessoResponse" />
+
+<xs:element name="listaSistemas" type="tns:listaSistemas" />
+
+<xs:element name="listaSistemasResponse" type="tns:listaSistemasResponse" />
+
+<xs:element name="listaTiposUsuario" type="tns:listaTiposUsuario" />
+
+<xs:element name="listaTiposUsuarioResponse" type="tns:listaTiposUsuarioResponse" />
+
+<xs:element name="listaTodosBrowsers" type="tns:listaTodosBrowsers" />
+
+<xs:element name="listaTodosBrowsersResponse" type="tns:listaTodosBrowsersResponse" />
+
+<xs:element name="listaUsuarios" type="tns:listaUsuarios" />
+
+<xs:element name="listaUsuariosResponse" type="tns:listaUsuariosResponse" />
+
+<xs:element name="persistir_TipoUsuario" type="tns:persistir_TipoUsuario" />
+
+<xs:element name="persistir_TipoUsuarioResponse" type="tns:persistir_TipoUsuarioResponse" />
+
+<xs:element name="persistir_browser" type="tns:persistir_browser" />
+
+<xs:element name="persistir_browserResponse" type="tns:persistir_browserResponse" />
+
+<xs:element name="persistir_formulario" type="tns:persistir_formulario" />
+
+<xs:element name="persistir_formularioResponse" type="tns:persistir_formularioResponse" />
+
+<xs:element name="persistir_formulariosUsuario" type="tns:persistir_formulariosUsuario" />
+
+<xs:element name="persistir_formulariosUsuarioResponse" type="tns:persistir_formulariosUsuarioResponse" />
+
+<xs:element name="persistir_log" type="tns:persistir_log" />
+
+<xs:element name="persistir_logResponse" type="tns:persistir_logResponse" />
+
+<xs:element name="persistir_moduloAcesso" type="tns:persistir_moduloAcesso" />
+
+<xs:element name="persistir_moduloAcessoResponse" type="tns:persistir_moduloAcessoResponse" />
+
+<xs:element name="persistir_moduloUsuario" type="tns:persistir_moduloUsuario" />
+
+<xs:element name="persistir_moduloUsuarioResponse" type="tns:persistir_moduloUsuarioResponse" />
+
+<xs:element name="persistir_nivelAcesso" type="tns:persistir_nivelAcesso" />
+
+<xs:element name="persistir_nivelAcessoResponse" type="tns:persistir_nivelAcessoResponse" />
+
+<xs:element name="persistir_sistema" type="tns:persistir_sistema" />
+
+<xs:element name="persistir_sistemaResponse" type="tns:persistir_sistemaResponse" />
+
+<xs:element name="persistir_usuario" type="tns:persistir_usuario" />
+
+<xs:element name="persistir_usuarioResponse" type="tns:persistir_usuarioResponse" />
+
+<xs:element name="persitir_modulosUsuario" type="tns:persitir_modulosUsuario" />
+
+<xs:element name="persitir_modulosUsuarioResponse" type="tns:persitir_modulosUsuarioResponse" />
+
+<xs:element name="remover_moduloUsuario" type="tns:remover_moduloUsuario" />
+
+<xs:element name="remover_moduloUsuarioResponse" type="tns:remover_moduloUsuarioResponse" />
+
+<xs:element name="remover_modulosUsuario" type="tns:remover_modulosUsuario" />
+
+<xs:element name="remover_modulosUsuarioResponse" type="tns:remover_modulosUsuarioResponse" />
+
+<xs:complexType name="listaModuloAcessos">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloAcesso" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="moduloAcesso">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidadeenti" type="tns:entidade" minOccurs="0" />
+<xs:element name="moac_baseDados" type="xs:string" minOccurs="0" />
+<xs:element name="moac_chaveAcesso" type="xs:string" minOccurs="0" />
+<xs:element name="moac_chaveUsuarios" type="xs:string" minOccurs="0" />
+<xs:element name="moac_dataActivacao" type="xs:dateTime" minOccurs="0" />
+<xs:element name="moac_dataFinalTrial" type="xs:dateTime" minOccurs="0" />
+<xs:element name="moac_dataFinalTrialEncry" type="xs:string" minOccurs="0" />
+<xs:element name="moac_diasRemanescentes" type="xs:int" minOccurs="0" />
+<xs:element name="moac_diasRemanescentesEncry" type="xs:string" minOccurs="0" />
+<xs:element name="moac_id" type="xs:int" />
+<xs:element name="moac_imagemFundo" type="xs:string" minOccurs="0" />
+<xs:element name="moac_perfilCores" type="xs:string" minOccurs="0" />
+<xs:element name="sistema" type="tns:sistema" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="entidade">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="enti_capital" type="xs:double" />
+<xs:element name="enti_chaveSistema" type="xs:string" minOccurs="0" />
+<xs:element name="enti_codigoPostal" type="xs:string" minOccurs="0" />
+<xs:element name="enti_contactos1" type="xs:string" minOccurs="0" />
+<xs:element name="enti_contactos2" type="xs:string" minOccurs="0" />
+<xs:element name="enti_contactos3" type="xs:string" minOccurs="0" />
+<xs:element name="enti_dataFinalAssistencia" type="xs:dateTime" minOccurs="0" />
+<xs:element name="enti_dataInicioAssitencia" type="xs:dateTime" minOccurs="0" />
+<xs:element name="enti_delegacao" type="xs:string" minOccurs="0" />
+<xs:element name="enti_distrito" type="xs:string" minOccurs="0" />
+<xs:element name="enti_dominio" type="xs:string" minOccurs="0" />
+<xs:element name="enti_email" type="xs:string" minOccurs="0" />
+<xs:element name="enti_endereco" type="xs:string" minOccurs="0" />
+<xs:element name="enti_estadoSistema" type="xs:string" minOccurs="0" />
+<xs:element name="enti_generoActividade" type="xs:string" minOccurs="0" />
+<xs:element name="enti_id" type="xs:int" />
+<xs:element name="enti_iva" type="xs:double" />
+<xs:element name="enti_licenca" type="xs:string" minOccurs="0" />
+<xs:element name="enti_linguaSistema" type="xs:string" minOccurs="0" />
+<xs:element name="enti_logotipo" type="xs:string" minOccurs="0" />
+<xs:element name="enti_macServidor" type="xs:string" minOccurs="0" />
+<xs:element name="enti_newsletter" type="xs:boolean" />
+<xs:element name="enti_nome" type="xs:string" minOccurs="0" />
+<xs:element name="enti_nuit" type="xs:string" minOccurs="0" />
+<xs:element name="enti_pais" type="xs:string" minOccurs="0" />
+<xs:element name="enti_pessoaContacto" type="xs:string" minOccurs="0" />
+<xs:element name="enti_provincia" type="xs:string" minOccurs="0" />
+<xs:element name="enti_sigla" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sistema">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="sist_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="sist_estado" type="xs:boolean" />
+<xs:element name="sist_id" type="xs:int" />
+<xs:element name="sist_url" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSistemaId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSistemaIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sistema" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_formulario">
+<xs:sequence>
+<xs:element name="formulario" type="tns:formulario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulario">
+<xs:sequence>
+<xs:element name="form_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="form_id" type="xs:int" />
+<xs:element name="form_referencia" type="xs:string" minOccurs="0" />
+<xs:element name="sistema" type="tns:sistema" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_formularioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaTiposUsuario">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaTiposUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoUsuario">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="nivelAcessoniva" type="tns:nivelAcesso" minOccurs="0" />
+<xs:element name="tipu_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="tipu_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nivelAcesso">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="niva_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="niva_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModuloUsuarioReferencia">
+<xs:sequence>
+<xs:element name="referencia" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModuloUsuarioReferenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="moduloUsuario">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="modu_dataUltimoLogin" type="xs:dateTime" minOccurs="0" />
+<xs:element name="modu_id" type="xs:int" />
+<xs:element name="modu_referencia" type="xs:string" minOccurs="0" />
+<xs:element name="modu_visitas" type="xs:int" />
+<xs:element name="moduloAcesso" type="tns:moduloAcesso" minOccurs="0" />
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuario">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="escola" type="tns:escola" minOccurs="0" />
+<xs:element name="pessoapess" type="tns:pessoa" minOccurs="0" />
+<xs:element name="tipoUsuariotipu" type="tns:tipoUsuario" minOccurs="0" />
+<xs:element name="usu_dataUltimaVisita" type="xs:dateTime" minOccurs="0" />
+<xs:element name="usua_codigoRegistro" type="xs:string" minOccurs="0" />
+<xs:element name="usua_dataValidade" type="xs:dateTime" minOccurs="0" />
+<xs:element name="usua_device" type="xs:string" minOccurs="0" />
+<xs:element name="usua_distrito" type="xs:string" minOccurs="0" />
+<xs:element name="usua_estado" type="xs:string" minOccurs="0" />
+<xs:element name="usua_fotoperfil" type="xs:string" minOccurs="0" />
+<xs:element name="usua_id" type="xs:int" />
+<xs:element name="usua_online" type="xs:string" minOccurs="0" />
+<xs:element name="usua_perguntaSeguranca" type="xs:string" minOccurs="0" />
+<xs:element name="usua_presenca" type="xs:boolean" />
+<xs:element name="usua_provincia" type="xs:string" minOccurs="0" />
+<xs:element name="usua_respostaSeguranca" type="xs:string" minOccurs="0" />
+<xs:element name="usua_senha" type="xs:string" minOccurs="0" />
+<xs:element name="usua_status" type="xs:string" minOccurs="0" />
+<xs:element name="usua_statusicon" type="xs:string" minOccurs="0" />
+<xs:element name="usua_tentativasLogin" type="xs:int" minOccurs="0" />
+<xs:element name="usua_ultimasPasswords" type="xs:string" minOccurs="0" />
+<xs:element name="usua_usuario" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escola">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="esc_alunos" type="xs:int" />
+<xs:element name="esc_alunos_homens" type="xs:int" />
+<xs:element name="esc_alunos_mulheres" type="xs:int" />
+<xs:element name="esc_alunos_necessitados" type="xs:int" />
+<xs:element name="esc_contacto" type="xs:string" minOccurs="0" />
+<xs:element name="esc_data" type="xs:dateTime" minOccurs="0" />
+<xs:element name="esc_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="esc_distrito" type="xs:string" minOccurs="0" />
+<xs:element name="esc_docentes" type="xs:int" />
+<xs:element name="esc_endereco" type="xs:string" minOccurs="0" />
+<xs:element name="esc_faixa_05" type="xs:int" />
+<xs:element name="esc_faixa_1115" type="xs:int" />
+<xs:element name="esc_faixa_1625" type="xs:int" />
+<xs:element name="esc_faixa_2635" type="xs:int" />
+<xs:element name="esc_faixa_35" type="xs:int" />
+<xs:element name="esc_faixa_610" type="xs:int" />
+<xs:element name="esc_id" type="xs:int" />
+<xs:element name="esc_membros_homens" type="xs:int" />
+<xs:element name="esc_membros_mulheres" type="xs:int" />
+<xs:element name="esc_provincia" type="xs:string" minOccurs="0" />
+<xs:element name="esc_salas" type="xs:int" />
+<xs:element name="esc_turmas" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pessoa">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="nacionalidadenaci" type="tns:nacionalidade" minOccurs="0" />
+<xs:element name="pess_actividade" type="xs:string" minOccurs="0" />
+<xs:element name="pess_altura" type="xs:float" minOccurs="0" />
+<xs:element name="pess_apelido" type="xs:string" minOccurs="0" />
+<xs:element name="pess_bairro" type="xs:string" minOccurs="0" />
+<xs:element name="pess_bi" type="xs:string" minOccurs="0" />
+<xs:element name="pess_cPostal" type="xs:string" minOccurs="0" />
+<xs:element name="pess_cidade" type="xs:string" minOccurs="0" />
+<xs:element name="pess_contacto" type="xs:string" minOccurs="0" />
+<xs:element name="pess_contactoMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_contactoPai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_dataCadastro" type="xs:dateTime" minOccurs="0" />
+<xs:element name="pess_dataEmissaoBi" type="xs:string" minOccurs="0" />
+<xs:element name="pess_dataNascimento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="pess_dataValidadeBi" type="xs:string" minOccurs="0" />
+<xs:element name="pess_distrito" type="xs:string" minOccurs="0" />
+<xs:element name="pess_documento" type="xs:string" minOccurs="0" />
+<xs:element name="pess_educacao" type="xs:string" minOccurs="0" />
+<xs:element name="pess_email" type="xs:string" minOccurs="0" />
+<xs:element name="pess_estadoCivil" type="xs:string" minOccurs="0" />
+<xs:element name="pess_foto" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoActividae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoAlimentacao" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoBebida" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoCultura" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoEntretenimento" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoFilme" type="xs:string" minOccurs="0" />
+<xs:element name="pess_generoMusica" type="xs:string" minOccurs="0" />
+<xs:element name="pess_grauParentesco" type="xs:string" minOccurs="0" />
+<xs:element name="pess_hobbie" type="xs:string" minOccurs="0" />
+<xs:element name="pess_id" type="xs:int" />
+<xs:element name="pess_lingua" type="xs:string" minOccurs="0" />
+<xs:element name="pess_localTrabalho" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nome" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nomeMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nomePai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_nuit" type="xs:string" minOccurs="0" />
+<xs:element name="pess_numeroCasa" type="xs:string" minOccurs="0" />
+<xs:element name="pess_origemRegisto" type="xs:string" minOccurs="0" />
+<xs:element name="pess_pais" type="xs:string" minOccurs="0" />
+<xs:element name="pess_profissaoMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_profissaoPai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_provincia" type="xs:string" minOccurs="0" />
+<xs:element name="pess_raca" type="xs:string" minOccurs="0" />
+<xs:element name="pess_relegiao" type="xs:string" minOccurs="0" />
+<xs:element name="pess_responsavel" type="xs:string" minOccurs="0" />
+<xs:element name="pess_rua" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sector" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sexo" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sinais" type="xs:string" minOccurs="0" />
+<xs:element name="pess_skills" type="xs:string" minOccurs="0" />
+<xs:element name="pess_sobre" type="xs:string" minOccurs="0" />
+<xs:element name="pess_tipo" type="xs:string" minOccurs="0" />
+<xs:element name="pess_trabalhoMae" type="xs:string" minOccurs="0" />
+<xs:element name="pess_trabalhoPai" type="xs:string" minOccurs="0" />
+<xs:element name="pess_vicios" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nacionalidade">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="naci_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="naci_id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaFormularios">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaNiveisAcesso">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaNiveisAcessoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nivelAcesso" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persitir_modulosUsuario">
+<xs:sequence>
+<xs:element name="modulosUsuario" type="tns:modulosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modulosUsuario">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="mui_activos" type="xs:boolean" />
+<xs:element name="mui_aprovacaoDespesas" type="xs:boolean" />
+<xs:element name="mui_armazem" type="xs:boolean" />
+<xs:element name="mui_avaliacao" type="xs:boolean" />
+<xs:element name="mui_avaliacao_boletins" type="xs:boolean" />
+<xs:element name="mui_avaliacao_notas" type="xs:boolean" />
+<xs:element name="mui_avaliacao_observacoes" type="xs:boolean" />
+<xs:element name="mui_avaliacao_pautas" type="xs:boolean" />
+<xs:element name="mui_avaliacao_presencas" type="xs:boolean" />
+<xs:element name="mui_bancos" type="xs:boolean" />
+<xs:element name="mui_biblioteca" type="xs:boolean" />
+<xs:element name="mui_calendario" type="xs:boolean" />
+<xs:element name="mui_calendario_exames" type="xs:boolean" />
+<xs:element name="mui_calendario_horario" type="xs:boolean" />
+<xs:element name="mui_calendario_recorrencias" type="xs:boolean" />
+<xs:element name="mui_calendario_testes" type="xs:boolean" />
+<xs:element name="mui_clientes" type="xs:boolean" />
+<xs:element name="mui_comercial" type="xs:boolean" />
+<xs:element name="mui_configuracao" type="xs:boolean" />
+<xs:element name="mui_contratos" type="xs:boolean" />
+<xs:element name="mui_cursos" type="xs:boolean" />
+<xs:element name="mui_cursos_areasInscricao" type="xs:boolean" />
+<xs:element name="mui_cursos_cursos" type="xs:boolean" />
+<xs:element name="mui_cursos_cursosCentro" type="xs:boolean" />
+<xs:element name="mui_cursos_modulos" type="xs:boolean" />
+<xs:element name="mui_depositos" type="xs:boolean" />
+<xs:element name="mui_despesas" type="xs:boolean" />
+<xs:element name="mui_despesas_estoque" type="xs:boolean" />
+<xs:element name="mui_despesas_extracto" type="xs:boolean" />
+<xs:element name="mui_despesas_formacao" type="xs:boolean" />
+<xs:element name="mui_despesas_internas" type="xs:boolean" />
+<xs:element name="mui_disciplinas" type="xs:boolean" />
+<xs:element name="mui_disciplinas_curso" type="xs:boolean" />
+<xs:element name="mui_disciplinas_docente" type="xs:boolean" />
+<xs:element name="mui_disciplinas_gestao" type="xs:boolean" />
+<xs:element name="mui_disciplinas_turma" type="xs:boolean" />
+<xs:element name="mui_docuemntos" type="xs:boolean" />
+<xs:element name="mui_empresas" type="xs:boolean" />
+<xs:element name="mui_estatisticas" type="xs:boolean" />
+<xs:element name="mui_estatisticas_curso" type="xs:boolean" />
+<xs:element name="mui_estatisticas_gerais" type="xs:boolean" />
+<xs:element name="mui_facturas" type="xs:boolean" />
+<xs:element name="mui_financeiro" type="xs:boolean" />
+<xs:element name="mui_formasPagamento" type="xs:boolean" />
+<xs:element name="mui_fornecedores" type="xs:boolean" />
+<xs:element name="mui_gestao" type="xs:boolean" />
+<xs:element name="mui_gestao_centros" type="xs:boolean" />
+<xs:element name="mui_gestao_formadores" type="xs:boolean" />
+<xs:element name="mui_gestao_formados" type="xs:boolean" />
+<xs:element name="mui_gestao_inscricoes" type="xs:boolean" />
+<xs:element name="mui_gestao_parceiros" type="xs:boolean" />
+<xs:element name="mui_gestao_turmas" type="xs:boolean" />
+<xs:element name="mui_guiasRemessa" type="xs:boolean" />
+<xs:element name="mui_id" type="xs:int" />
+<xs:element name="mui_lancamentos" type="xs:boolean" />
+<xs:element name="mui_lembres" type="xs:boolean" />
+<xs:element name="mui_moedas" type="xs:boolean" />
+<xs:element name="mui_pagamentos" type="xs:boolean" />
+<xs:element name="mui_pagamentos_multas" type="xs:boolean" />
+<xs:element name="mui_pagamentos_outrosPagamentos" type="xs:boolean" />
+<xs:element name="mui_pagamentos_pagamentosOnline" type="xs:boolean" />
+<xs:element name="mui_pagamentos_propinas" type="xs:boolean" />
+<xs:element name="mui_pagamentos_situacaoPagamentos" type="xs:boolean" />
+<xs:element name="mui_pagamentos_taxas" type="xs:boolean" />
+<xs:element name="mui_petyCash" type="xs:boolean" />
+<xs:element name="mui_planosDeConta" type="xs:boolean" />
+<xs:element name="mui_produtos" type="xs:boolean" />
+<xs:element name="mui_recursosHumanos" type="xs:boolean" />
+<xs:element name="mui_requisicoes" type="xs:boolean" />
+<xs:element name="mui_requisicoes_add" type="xs:boolean" />
+<xs:element name="mui_requisicoes_aprove" type="xs:boolean" />
+<xs:element name="mui_requisicoes_list" type="xs:boolean" />
+<xs:element name="mui_requisicoes_status" type="xs:boolean" />
+<xs:element name="mui_resultados" type="xs:boolean" />
+<xs:element name="mui_usuarios" type="xs:boolean" />
+<xs:element name="mui_usuarios_add" type="xs:boolean" />
+<xs:element name="mui_usuarios_logs" type="xs:boolean" />
+<xs:element name="mui_usuarios_permissoes" type="xs:boolean" />
+<xs:element name="mui_usuarios_status" type="xs:boolean" />
+<xs:element name="mui_vendas" type="xs:boolean" />
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persitir_modulosUsuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_moduloUsuario">
+<xs:sequence>
+<xs:element name="moduloUsuario" type="tns:moduloUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_moduloUsuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosEntidade">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosEntidadeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloAcesso" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModuloUsuarioId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModuloUsuarioIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelAcessoDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelAcessoDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nivelAcesso" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsPeriodo">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="data1" type="xs:string" minOccurs="0" />
+<xs:element name="data2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsPeriodoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:log" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="log">
+<xs:sequence>
+<xs:element name="encrypted" type="xs:boolean" />
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="log_data" type="xs:dateTime" minOccurs="0" />
+<xs:element name="log_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="log_hora" type="xs:string" minOccurs="0" />
+<xs:element name="log_id" type="xs:int" />
+<xs:element name="sistema" type="tns:sistema" minOccurs="0" />
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModuloAcessoId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModuloAcessoIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloAcesso" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscar_usuario_id">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscar_usuario_idResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSistemaDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaSistemaDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sistema" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_formulariosUsuario">
+<xs:sequence>
+<xs:element name="formulariosUsuario" type="tns:formulariosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="formulariosUsuario">
+<xs:sequence>
+<xs:element name="formu_d" type="xs:boolean" />
+<xs:element name="formu_i" type="xs:boolean" />
+<xs:element name="formu_id" type="xs:int" />
+<xs:element name="formu_u" type="xs:boolean" />
+<xs:element name="formu_v" type="xs:boolean" />
+<xs:element name="formulario" type="tns:formulario" minOccurs="0" />
+<xs:element name="moduloUsuario" type="tns:moduloUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_formulariosUsuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaLogsDataUsuario">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="data" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsDataUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:log" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_modulosUsuario">
+<xs:sequence>
+<xs:element name="modulosUsuario" type="tns:modulosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_modulosUsuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscar_usuario">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscar_usuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosSistema">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosSistemaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloAcesso" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaBrowsers">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaBrowsersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:browser" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="browser">
+<xs:sequence>
+<xs:element name="bro_data" type="xs:dateTime" minOccurs="0" />
+<xs:element name="bro_descricao" type="xs:string" minOccurs="0" />
+<xs:element name="bro_id" type="xs:int" />
+<xs:element name="bro_lembre" type="xs:string" minOccurs="0" />
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloUsuariosUsuario">
+<xs:sequence>
+<xs:element name="idUsuario" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloUsuariosUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModulosUsuarios">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModulosUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulosUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autenticar">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0" />
+<xs:element name="senha" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="autenticarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoUsuarioDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoUsuarioDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDosUsuariosLimit">
+<xs:sequence>
+<xs:element name="limite" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDosUsuariosLimitResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaBrowsersUsuario">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+<xs:element name="idUsuario" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaBrowsersUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:browser" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDosUsuariosEntidade">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDosUsuariosEntidadeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDosUsuariosEntidadeLimit">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="limite" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaDosUsuariosEntidadeLimitResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloUsuariosUsuarioVisitas">
+<xs:sequence>
+<xs:element name="idUsuario" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloUsuariosUsuarioVisitasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModulosUsuarioId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModulosUsuarioIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsSistema">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsSistemaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:log" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaUsuarios">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsDataUsuarioLimite">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="data" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="limite" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsDataUsuarioLimiteResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:log" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosUsuarios">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulariosUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_sistema">
+<xs:sequence>
+<xs:element name="sistema" type="tns:sistema" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_sistemaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaModuloUsuarios">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaModuloUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaFormulariosUsuarioModuloUsuario">
+<xs:sequence>
+<xs:element name="idFormulario" type="xs:int" />
+<xs:element name="idModuloUsuario" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaFormulariosUsuarioModuloUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulariosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelAcessoId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaNivelAcessoIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nivelAcesso" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alterarEstado">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="estado" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alterarEstadoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaFormularioDescricao">
+<xs:sequence>
+<xs:element name="descricao" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaFormularioDescricaoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosSistemaEntidade">
+<xs:sequence>
+<xs:element name="idSistema" type="xs:int" />
+<xs:element name="idEntidade" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaModuloAcessosSistemaEntidadeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:moduloAcesso" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosUsuarios_Usuario">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosUsuarios_UsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulariosUsuario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_moduloAcesso">
+<xs:sequence>
+<xs:element name="moduloAcesso" type="tns:moduloAcesso" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_moduloAcessoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaTodosBrowsers">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaTodosBrowsersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:browser" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_usuario">
+<xs:sequence>
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_usuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_nivelAcesso">
+<xs:sequence>
+<xs:element name="nivelAcesso" type="tns:nivelAcesso" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_nivelAcessoResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaTipoUsuarioId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaTipoUsuarioIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_TipoUsuario">
+<xs:sequence>
+<xs:element name="TipoUsuario" type="tns:tipoUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_TipoUsuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_log">
+<xs:sequence>
+<xs:element name="log" type="tns:log" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_logResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="persistir_browser">
+<xs:sequence>
+<xs:element name="browser" type="tns:browser" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistir_browserResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="buscaFormulariosUsuarioId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaFormulariosUsuarioIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulariosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaFormularioId">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaFormularioIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_moduloUsuario">
+<xs:sequence>
+<xs:element name="moduloUsuario" type="tns:moduloUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remover_moduloUsuarioResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosSistema">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaFormulariosSistemaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:formulario" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModulosUsuario">
+<xs:sequence>
+<xs:element name="usuario" type="tns:usuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaModulosUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modulosUsuario" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaSistemas">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaSistemasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sistema" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsData">
+<xs:sequence>
+<xs:element name="entidade" type="tns:entidade" minOccurs="0" />
+<xs:element name="data" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaLogsDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:log" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

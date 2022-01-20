@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="mz.co.centralserver.webservice.UtilitariosWSrv" name="UtilitariosWSrv" url-pattern="/UtilitariosWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.RecursosHumanosWSrv" name="RecursosHumanosWSrv" url-pattern="/RecursosHumanosWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.GestaoWSrv" name="GestaoWSrv" url-pattern="/GestaoWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.ControleAcessoWSrv" name="ControleAcessoWSrv" url-pattern="/ControleAcessoWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.LembreteWSrv" name="LembreteWSrv" url-pattern="/LembreteWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.VendasWSrv" name="VendasWSrv" url-pattern="/VendasWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.FinancasWSrv" name="FinancasWSrv" url-pattern="/FinancasWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.IspcWSrv" name="IspcWSrv" url-pattern="/IspcWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.ContratoWSrv" name="ContratoWSrv" url-pattern="/ContratoWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.EnsinoWSrv" name="EnsinoWSrv" url-pattern="/EnsinoWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.DocumentoWSrv" name="DocumentoWSrv" url-pattern="/DocumentoWSrv"/>
+  <endpoint implementation="mz.co.centralserver.webservice.ContabilidadeWSrv" name="ContabilidadeWSrv" url-pattern="/ContabilidadeWSrv"/>
+</endpoints>

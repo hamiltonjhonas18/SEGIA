@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservice.centralserver.co.mz/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservice.centralserver.co.mz/">
+
+<xs:element name="buscaEDST_District" type="tns:buscaEDST_District" />
+
+<xs:element name="buscaEDST_DistrictResponse" type="tns:buscaEDST_DistrictResponse" />
+
+<xs:element name="buscaEDST_Province" type="tns:buscaEDST_Province" />
+
+<xs:element name="buscaEDST_ProvinceResponse" type="tns:buscaEDST_ProvinceResponse" />
+
+<xs:element name="buscaEDST_School" type="tns:buscaEDST_School" />
+
+<xs:element name="buscaEDST_SchoolResponse" type="tns:buscaEDST_SchoolResponse" />
+
+<xs:element name="listaEDST_AdministrativePost" type="tns:listaEDST_AdministrativePost" />
+
+<xs:element name="listaEDST_AdministrativePostResponse" type="tns:listaEDST_AdministrativePostResponse" />
+
+<xs:element name="listaEDST_AdministrativePost_District" type="tns:listaEDST_AdministrativePost_District" />
+
+<xs:element name="listaEDST_AdministrativePost_DistrictResponse" type="tns:listaEDST_AdministrativePost_DistrictResponse" />
+
+<xs:element name="listaEDST_Area" type="tns:listaEDST_Area" />
+
+<xs:element name="listaEDST_AreaResponse" type="tns:listaEDST_AreaResponse" />
+
+<xs:element name="listaEDST_Area_Settlement" type="tns:listaEDST_Area_Settlement" />
+
+<xs:element name="listaEDST_Area_SettlementResponse" type="tns:listaEDST_Area_SettlementResponse" />
+
+<xs:element name="listaEDST_District" type="tns:listaEDST_District" />
+
+<xs:element name="listaEDST_DistrictResponse" type="tns:listaEDST_DistrictResponse" />
+
+<xs:element name="listaEDST_District_Province" type="tns:listaEDST_District_Province" />
+
+<xs:element name="listaEDST_District_ProvinceResponse" type="tns:listaEDST_District_ProvinceResponse" />
+
+<xs:element name="listaEDST_Education" type="tns:listaEDST_Education" />
+
+<xs:element name="listaEDST_EducationResponse" type="tns:listaEDST_EducationResponse" />
+
+<xs:element name="listaEDST_Province" type="tns:listaEDST_Province" />
+
+<xs:element name="listaEDST_ProvinceResponse" type="tns:listaEDST_ProvinceResponse" />
+
+<xs:element name="listaEDST_School" type="tns:listaEDST_School" />
+
+<xs:element name="listaEDST_SchoolResponse" type="tns:listaEDST_SchoolResponse" />
+
+<xs:element name="listaEDST_SchoolTypes" type="tns:listaEDST_SchoolTypes" />
+
+<xs:element name="listaEDST_SchoolTypesResponse" type="tns:listaEDST_SchoolTypesResponse" />
+
+<xs:element name="listaEDST_School_AdministrativePost" type="tns:listaEDST_School_AdministrativePost" />
+
+<xs:element name="listaEDST_School_AdministrativePostResponse" type="tns:listaEDST_School_AdministrativePostResponse" />
+
+<xs:element name="listaEDST_School_Area" type="tns:listaEDST_School_Area" />
+
+<xs:element name="listaEDST_School_AreaResponse" type="tns:listaEDST_School_AreaResponse" />
+
+<xs:element name="listaEDST_School_District" type="tns:listaEDST_School_District" />
+
+<xs:element name="listaEDST_School_DistrictResponse" type="tns:listaEDST_School_DistrictResponse" />
+
+<xs:element name="listaEDST_School_Locality" type="tns:listaEDST_School_Locality" />
+
+<xs:element name="listaEDST_School_LocalityResponse" type="tns:listaEDST_School_LocalityResponse" />
+
+<xs:element name="listaEDST_School_Settlement" type="tns:listaEDST_School_Settlement" />
+
+<xs:element name="listaEDST_School_SettlementResponse" type="tns:listaEDST_School_SettlementResponse" />
+
+<xs:element name="listaEDST_School_Type" type="tns:listaEDST_School_Type" />
+
+<xs:element name="listaEDST_School_TypeResponse" type="tns:listaEDST_School_TypeResponse" />
+
+<xs:element name="listaEDST_School_Zip" type="tns:listaEDST_School_Zip" />
+
+<xs:element name="listaEDST_School_ZipResponse" type="tns:listaEDST_School_ZipResponse" />
+
+<xs:element name="listaEDST_Zip" type="tns:listaEDST_Zip" />
+
+<xs:element name="listaEDST_ZipResponse" type="tns:listaEDST_ZipResponse" />
+
+<xs:element name="listaEDST_Zip_District" type="tns:listaEDST_Zip_District" />
+
+<xs:element name="listaEDST_Zip_DistrictResponse" type="tns:listaEDST_Zip_DistrictResponse" />
+
+<xs:element name="listaEDST_Zip_School" type="tns:listaEDST_Zip_School" />
+
+<xs:element name="listaEDST_Zip_SchoolResponse" type="tns:listaEDST_Zip_SchoolResponse" />
+
+<xs:complexType name="listaEDST_School">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_SchoolResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstSchool">
+<xs:sequence>
+<xs:element name="abbreviation" type="xs:string" minOccurs="0" />
+<xs:element name="administrativePostId" type="xs:int" minOccurs="0" />
+<xs:element name="areaId" type="xs:int" minOccurs="0" />
+<xs:element name="coordinateX" type="xs:double" minOccurs="0" />
+<xs:element name="coordinateY" type="xs:double" minOccurs="0" />
+<xs:element name="districtId" type="xs:int" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="local" type="xs:int" />
+<xs:element name="localityId" type="xs:int" minOccurs="0" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="oldId" type="xs:int" minOccurs="0" />
+<xs:element name="oldName" type="xs:string" minOccurs="0" />
+<xs:element name="settlementId" type="xs:int" minOccurs="0" />
+<xs:element name="typeId" type="xs:int" minOccurs="0" />
+<xs:element name="yearOpened" type="xs:int" minOccurs="0" />
+<xs:element name="zipId" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_Area">
+<xs:sequence>
+<xs:element name="AreaId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_AreaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Education">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_EducationResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstEducation" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstEducation">
+<xs:sequence>
+<xs:element name="abbreviation" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Zip_School">
+<xs:sequence>
+<xs:element name="HeadQuarterSchoolId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Zip_SchoolResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstZip" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstZip">
+<xs:sequence>
+<xs:element name="districtId" type="xs:int" />
+<xs:element name="headQuarterSchoolId" type="xs:int" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaEDST_District">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaEDST_DistrictResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstDistrict" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstDistrict">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="provinceId" type="xs:int" />
+<xs:element name="urbano" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_District">
+<xs:sequence>
+<xs:element name="DistrictId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_DistrictResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_AdministrativePost">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_AdministrativePostResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstAdministrativePost" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstAdministrativePost">
+<xs:sequence>
+<xs:element name="districtId" type="xs:int" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="oldId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaEDST_School">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="local" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaEDST_SchoolResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_Type">
+<xs:sequence>
+<xs:element name="TypeId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_TypeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Province">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_ProvinceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstProvince" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstProvince">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Zip">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_ZipResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstZip" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaEDST_Province">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscaEDST_ProvinceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstProvince" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_AdministrativePost_District">
+<xs:sequence>
+<xs:element name="DistrictId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_AdministrativePost_DistrictResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstAdministrativePost" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_District">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_DistrictResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstDistrict" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_Settlement">
+<xs:sequence>
+<xs:element name="SettlementId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_SettlementResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_SchoolTypes">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_SchoolTypesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchoolType" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstSchoolType">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Area">
+<xs:sequence>
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_AreaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstArea" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edstArea">
+<xs:sequence>
+<xs:element name="id" type="xs:int" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="settlementId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_Zip">
+<xs:sequence>
+<xs:element name="ZipId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_ZipResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_Locality">
+<xs:sequence>
+<xs:element name="LocalityId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_LocalityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Zip_District">
+<xs:sequence>
+<xs:element name="DistrictId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Zip_DistrictResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstZip" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_District_Province">
+<xs:sequence>
+<xs:element name="ProvinceId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_District_ProvinceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstDistrict" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_AdministrativePost">
+<xs:sequence>
+<xs:element name="AdministrativePostId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_School_AdministrativePostResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstSchool" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Area_Settlement">
+<xs:sequence>
+<xs:element name="SettlementId" type="xs:int" />
+<xs:element name="limit" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaEDST_Area_SettlementResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:edstArea" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
